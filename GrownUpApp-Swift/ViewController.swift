@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         print("大家好! 现在开始学习Swift啦...")
         self.view.backgroundColor = UIColor.orange
+        
     }
 
     override func didReceiveMemoryWarning() {
