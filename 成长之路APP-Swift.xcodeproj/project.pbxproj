@@ -12,9 +12,9 @@
 		0459313C1FAB435600E4F86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313A1FAB435600E4F86E /* Main.storyboard */; };
 		0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459313D1FAB435600E4F86E /* Assets.xcassets */; };
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
-		0459314C1FAB435600E4F86E /* GrownUpApp_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* GrownUpApp_SwiftTests.swift */; };
-		045931571FAB435600E4F86E /* GrownUpApp_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* GrownUpApp_SwiftUITests.swift */; };
-		93891E0C750A8269255427B5 /* libPods-GrownUpApp-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ABE411C007BD6CF43D6F3 /* libPods-GrownUpApp-Swift.a */; };
+		0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */; };
+		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
+		93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +35,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		029058B28A9C2B40407B08A0 /* Pods-GrownUpApp-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrownUpApp-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrownUpApp-Swift/Pods-GrownUpApp-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		045931331FAB435600E4F86E /* GrownUpApp-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrownUpApp-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		028FB0C4F483882E3F6AFE89 /* Pods-成长之路APP-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931361FAB435600E4F86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045931381FAB435600E4F86E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0459313B1FAB435600E4F86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0459313D1FAB435600E4F86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045931401FAB435600E4F86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045931421FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045931471FAB435600E4F86E /* GrownUpApp-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GrownUpApp-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0459314B1FAB435600E4F86E /* GrownUpApp_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrownUpApp_SwiftTests.swift; sourceTree = "<group>"; };
+		045931471FAB435600E4F86E /* 成长之路APP-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "成长之路APP-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftTests.swift"; sourceTree = "<group>"; };
 		0459314D1FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045931521FAB435600E4F86E /* GrownUpApp-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GrownUpApp-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		045931561FAB435600E4F86E /* GrownUpApp_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrownUpApp_SwiftUITests.swift; sourceTree = "<group>"; };
+		045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "成长之路APP-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftUITests.swift"; sourceTree = "<group>"; };
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A95ABE411C007BD6CF43D6F3 /* libPods-GrownUpApp-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrownUpApp-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAA596F7915A270081A98DCD /* Pods-GrownUpApp-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrownUpApp-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrownUpApp-Swift/Pods-GrownUpApp-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-成长之路APP-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93891E0C750A8269255427B5 /* libPods-GrownUpApp-Swift.a in Frameworks */,
+				93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +82,9 @@
 		0459312A1FAB435600E4F86E = {
 			isa = PBXGroup;
 			children = (
-				045931351FAB435600E4F86E /* GrownUpApp-Swift */,
-				0459314A1FAB435600E4F86E /* GrownUpApp-SwiftTests */,
-				045931551FAB435600E4F86E /* GrownUpApp-SwiftUITests */,
+				045931351FAB435600E4F86E /* 成长之路APP-Swift */,
+				0459314A1FAB435600E4F86E /* 成长之路APP-SwiftTests */,
+				045931551FAB435600E4F86E /* 成长之路APP-SwiftUITests */,
 				045931341FAB435600E4F86E /* Products */,
 				652447A0F67FDEC2F95C3FBF /* Pods */,
 				92028842BFEE2F3859B36309 /* Frameworks */,
@@ -94,14 +94,14 @@
 		045931341FAB435600E4F86E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				045931331FAB435600E4F86E /* GrownUpApp-Swift.app */,
-				045931471FAB435600E4F86E /* GrownUpApp-SwiftTests.xctest */,
-				045931521FAB435600E4F86E /* GrownUpApp-SwiftUITests.xctest */,
+				045931331FAB435600E4F86E /* 成长之路APP-Swift.app */,
+				045931471FAB435600E4F86E /* 成长之路APP-SwiftTests.xctest */,
+				045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		045931351FAB435600E4F86E /* GrownUpApp-Swift */ = {
+		045931351FAB435600E4F86E /* 成长之路APP-Swift */ = {
 			isa = PBXGroup;
 			children = (
 				045931361FAB435600E4F86E /* AppDelegate.swift */,
@@ -111,32 +111,32 @@
 				0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */,
 				045931421FAB435600E4F86E /* Info.plist */,
 			);
-			path = "GrownUpApp-Swift";
+			path = "成长之路APP-Swift";
 			sourceTree = "<group>";
 		};
-		0459314A1FAB435600E4F86E /* GrownUpApp-SwiftTests */ = {
+		0459314A1FAB435600E4F86E /* 成长之路APP-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				0459314B1FAB435600E4F86E /* GrownUpApp_SwiftTests.swift */,
+				0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */,
 				0459314D1FAB435600E4F86E /* Info.plist */,
 			);
-			path = "GrownUpApp-SwiftTests";
+			path = "成长之路APP-SwiftTests";
 			sourceTree = "<group>";
 		};
-		045931551FAB435600E4F86E /* GrownUpApp-SwiftUITests */ = {
+		045931551FAB435600E4F86E /* 成长之路APP-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				045931561FAB435600E4F86E /* GrownUpApp_SwiftUITests.swift */,
+				045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */,
 				045931581FAB435600E4F86E /* Info.plist */,
 			);
-			path = "GrownUpApp-SwiftUITests";
+			path = "成长之路APP-SwiftUITests";
 			sourceTree = "<group>";
 		};
 		652447A0F67FDEC2F95C3FBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				029058B28A9C2B40407B08A0 /* Pods-GrownUpApp-Swift.debug.xcconfig */,
-				DAA596F7915A270081A98DCD /* Pods-GrownUpApp-Swift.release.xcconfig */,
+				BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */,
+				028FB0C4F483882E3F6AFE89 /* Pods-成长之路APP-Swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 		92028842BFEE2F3859B36309 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A95ABE411C007BD6CF43D6F3 /* libPods-GrownUpApp-Swift.a */,
+				A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		045931321FAB435600E4F86E /* GrownUpApp-Swift */ = {
+		045931321FAB435600E4F86E /* 成长之路APP-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0459315B1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-Swift" */;
+			buildConfigurationList = 0459315B1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-Swift" */;
 			buildPhases = (
 				FCB4A751A46ADDA5498B54B9 /* [CP] Check Pods Manifest.lock */,
 				0459312F1FAB435600E4F86E /* Sources */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = "GrownUpApp-Swift";
+			name = "成长之路APP-Swift";
 			productName = "GrownUpApp-Swift";
-			productReference = 045931331FAB435600E4F86E /* GrownUpApp-Swift.app */;
+			productReference = 045931331FAB435600E4F86E /* 成长之路APP-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		045931461FAB435600E4F86E /* GrownUpApp-SwiftTests */ = {
+		045931461FAB435600E4F86E /* 成长之路APP-SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0459315E1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-SwiftTests" */;
+			buildConfigurationList = 0459315E1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-SwiftTests" */;
 			buildPhases = (
 				045931431FAB435600E4F86E /* Sources */,
 				045931441FAB435600E4F86E /* Frameworks */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				045931491FAB435600E4F86E /* PBXTargetDependency */,
 			);
-			name = "GrownUpApp-SwiftTests";
+			name = "成长之路APP-SwiftTests";
 			productName = "GrownUpApp-SwiftTests";
-			productReference = 045931471FAB435600E4F86E /* GrownUpApp-SwiftTests.xctest */;
+			productReference = 045931471FAB435600E4F86E /* 成长之路APP-SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		045931511FAB435600E4F86E /* GrownUpApp-SwiftUITests */ = {
+		045931511FAB435600E4F86E /* 成长之路APP-SwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 045931611FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-SwiftUITests" */;
+			buildConfigurationList = 045931611FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-SwiftUITests" */;
 			buildPhases = (
 				0459314E1FAB435600E4F86E /* Sources */,
 				0459314F1FAB435600E4F86E /* Frameworks */,
@@ -203,9 +203,9 @@
 			dependencies = (
 				045931541FAB435600E4F86E /* PBXTargetDependency */,
 			);
-			name = "GrownUpApp-SwiftUITests";
+			name = "成长之路APP-SwiftUITests";
 			productName = "GrownUpApp-SwiftUITests";
-			productReference = 045931521FAB435600E4F86E /* GrownUpApp-SwiftUITests.xctest */;
+			productReference = 045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0459312E1FAB435600E4F86E /* Build configuration list for PBXProject "GrownUpApp-Swift" */;
+			buildConfigurationList = 0459312E1FAB435600E4F86E /* Build configuration list for PBXProject "成长之路APP-Swift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -247,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				045931321FAB435600E4F86E /* GrownUpApp-Swift */,
-				045931461FAB435600E4F86E /* GrownUpApp-SwiftTests */,
-				045931511FAB435600E4F86E /* GrownUpApp-SwiftUITests */,
+				045931321FAB435600E4F86E /* 成长之路APP-Swift */,
+				045931461FAB435600E4F86E /* 成长之路APP-SwiftTests */,
+				045931511FAB435600E4F86E /* 成长之路APP-SwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrownUpApp-Swift/Pods-GrownUpApp-Swift-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		52C7362B5160CDE04A96AAA9 /* [CP] Copy Pods Resources */ = {
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrownUpApp-Swift/Pods-GrownUpApp-Swift-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FCB4A751A46ADDA5498B54B9 /* [CP] Check Pods Manifest.lock */ = {
@@ -343,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0459314C1FAB435600E4F86E /* GrownUpApp_SwiftTests.swift in Sources */,
+				0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045931571FAB435600E4F86E /* GrownUpApp_SwiftUITests.swift in Sources */,
+				045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +360,12 @@
 /* Begin PBXTargetDependency section */
 		045931491FAB435600E4F86E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 045931321FAB435600E4F86E /* GrownUpApp-Swift */;
+			target = 045931321FAB435600E4F86E /* 成长之路APP-Swift */;
 			targetProxy = 045931481FAB435600E4F86E /* PBXContainerItemProxy */;
 		};
 		045931541FAB435600E4F86E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 045931321FAB435600E4F86E /* GrownUpApp-Swift */;
+			target = 045931321FAB435600E4F86E /* 成长之路APP-Swift */;
 			targetProxy = 045931531FAB435600E4F86E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -499,13 +499,13 @@
 		};
 		0459315C1FAB435600E4F86E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 029058B28A9C2B40407B08A0 /* Pods-GrownUpApp-Swift.debug.xcconfig */;
+			baseConfigurationReference = BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZ89FGWN9;
-				INFOPLIST_FILE = "GrownUpApp-Swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;
@@ -517,13 +517,13 @@
 		};
 		0459315D1FAB435600E4F86E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA596F7915A270081A98DCD /* Pods-GrownUpApp-Swift.release.xcconfig */;
+			baseConfigurationReference = 028FB0C4F483882E3F6AFE89 /* Pods-成长之路APP-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZ89FGWN9;
-				INFOPLIST_FILE = "GrownUpApp-Swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;
@@ -539,13 +539,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GrownUpApp-SwiftTests/Info.plist";
+				INFOPLIST_FILE = "成长之路APP-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huixiao.GrownUpApp-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrownUpApp-Swift.app/GrownUpApp-Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/成长之路APP-Swift.app/成长之路APP-Swift";
 			};
 			name = Debug;
 		};
@@ -555,13 +555,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GrownUpApp-SwiftTests/Info.plist";
+				INFOPLIST_FILE = "成长之路APP-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huixiao.GrownUpApp-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrownUpApp-Swift.app/GrownUpApp-Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/成长之路APP-Swift.app/成长之路APP-Swift";
 			};
 			name = Release;
 		};
@@ -570,7 +570,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GrownUpApp-SwiftUITests/Info.plist";
+				INFOPLIST_FILE = "成长之路APP-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huixiao.GrownUpApp-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,7 +585,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GrownUpApp-SwiftUITests/Info.plist";
+				INFOPLIST_FILE = "成长之路APP-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huixiao.GrownUpApp-SwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0459312E1FAB435600E4F86E /* Build configuration list for PBXProject "GrownUpApp-Swift" */ = {
+		0459312E1FAB435600E4F86E /* Build configuration list for PBXProject "成长之路APP-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				045931591FAB435600E4F86E /* Debug */,
@@ -607,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0459315B1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-Swift" */ = {
+		0459315B1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0459315C1FAB435600E4F86E /* Debug */,
@@ -616,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0459315E1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-SwiftTests" */ = {
+		0459315E1FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0459315F1FAB435600E4F86E /* Debug */,
@@ -625,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		045931611FAB435600E4F86E /* Build configuration list for PBXNativeTarget "GrownUpApp-SwiftUITests" */ = {
+		045931611FAB435600E4F86E /* Build configuration list for PBXNativeTarget "成长之路APP-SwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				045931621FAB435600E4F86E /* Debug */,

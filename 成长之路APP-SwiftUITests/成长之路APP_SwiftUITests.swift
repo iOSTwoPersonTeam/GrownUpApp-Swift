@@ -8,7 +8,7 @@
 
 import XCTest
 
-class GrownUpApp_SwiftUITests: XCTestCase {
+class 成长之路APP_SwiftUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

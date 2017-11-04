@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import GrownUpApp_Swift
+@testable import 成长之路APP_Swift
 
-class GrownUpApp_SwiftTests: XCTestCase {
+class 成长之路APP_SwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
