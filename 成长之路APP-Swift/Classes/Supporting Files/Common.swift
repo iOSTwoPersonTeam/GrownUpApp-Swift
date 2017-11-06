@@ -11,9 +11,9 @@ import UIKit
 //当前系统版本
 let TDSystemVersion = (UIDevice.current.systemVersion as NSString).floatValue
 //屏幕高度
-let TDScreenHeight = UIScreen.main.bounds.height
+let SCREENHEIGHT = UIScreen.main.bounds.height
 //屏幕宽度
-let TDScreenWith = UIScreen.main.bounds.width
+let SCREENWITH = UIScreen.main.bounds.width
 
 //MARK: -颜色方法
 func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
