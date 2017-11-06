@@ -8,8 +8,18 @@
 
 import UIKit
 
+//tag的累积值
+let kTagPlus: NSInteger = 1000
+//TabBar的高度
+let kTabBarH: CGFloat = 49
+
 class TDBaseTabBarController: UITabBarController {
 
+    //MARK: -普通属性
+    //后方的背景的图片
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

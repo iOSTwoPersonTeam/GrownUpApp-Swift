@@ -12,6 +12,7 @@
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
 		0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */; };
 		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
+		04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5307A1FB03F74003CAFD6 /* Common.swift */; };
 		04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A976F41FAFF99D0060212D /* TabBarConfig.plist */; };
 		04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */; };
 		04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */; };
@@ -55,6 +56,7 @@
 		045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "成长之路APP-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftUITests.swift"; sourceTree = "<group>"; };
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A5307A1FB03F74003CAFD6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		04A976F41FAFF99D0060212D /* TabBarConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
 		04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTabBarController.swift; sourceTree = "<group>"; };
 		04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		044BF82A1FAFF45A00B20A30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04A5307A1FB03F74003CAFD6 /* Common.swift */,
 				0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */,
 				045931421FAB435600E4F86E /* Info.plist */,
 			);
@@ -762,6 +765,7 @@
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
+				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
 				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
@@ -929,7 +933,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZ89FGWN9;
-				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Others/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;
@@ -947,7 +951,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CZ89FGWN9;
-				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Others/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;

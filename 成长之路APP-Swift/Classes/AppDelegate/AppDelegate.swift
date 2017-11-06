@@ -11,10 +11,26 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /*
+      1.在swift中 文件可以不引入而是直接使用,因为编译器已经帮助引入了文件
+      2.一个类如果遵循了一个协议,只需要在自己所继承的父类后面写上遵循的协议名称并以逗号","隔开,如果没有继承,那么直接在冒号后面写上协议名称即可
+    */
     var window: UIWindow?
+    var mainTabBarVC: TDBaseTabBarController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //1.创建APP窗口
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        //2.设置窗口颜色
+        self.window?.backgroundColor = UIColor.orange
+        //3.设置窗口跟控制器
+        self.mainTabBarVC = TDBaseTabBarController()
+        self.window?.rootViewController = self.mainTabBarVC
+        //显示窗口
+         self.window?.makeKeyAndVisible()
+        
         return true
     }
 
