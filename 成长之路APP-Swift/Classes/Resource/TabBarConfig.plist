@@ -9,6 +9,58 @@
 -->
 <plist version="1.0">
     <dict>
-    
+        <key>Tabbars</key>
+        <array>
+            <dict>
+                <key>ClassName</key>
+                <string>TDHomeViewController</string>
+                <key>NormalImg</key>
+                <string>tabbar_find_n</string>
+                <key>SelectedImg</key>
+                <string>tabbar_find_h</string>
+                <key>Title</key>
+                <string>首页</string>
+            </dict>
+            <dict>
+                <key>ClassName</key>
+                <string>TDContentViewController</string>
+                <key>NormalImg</key>
+                <string>tabbar_sound_n</string>
+                <key>SelectedImg</key>
+                <string>tabbar_sound_h</string>
+                <key>Title</key>
+                <string>内容</string>
+            </dict>
+            <dict>
+                <key>ClassName</key>
+                <string>TDPublishViewController</string>
+                <key>NormalImg</key>
+                <string>tabbar_np_playnon</string>
+                <key>SelectedImg</key>
+                <string>tabbar_np_playnon</string>
+                <key>Title</key>
+                <string>发布</string>
+            </dict>
+            <dict>
+                <key>ClassName</key>
+                <string>TDCommunityViewController</string>
+                <key>NormalImg</key>
+                <string>tabbar_download_n</string>
+                <key>SelectedImg</key>
+                <string>tabbar_download_h</string>
+                <key>Title</key>
+                <string>社区</string>
+            </dict>
+            <dict>
+                <key>ClassName</key>
+                <string>TDProfileTableViewController</string>
+                <key>NormalImg</key>
+                <string>tabbar_me_n</string>
+                <key>SelectedImg</key>
+                <string>tabbar_me_h</string>
+                <key>Title</key>
+                <string>我的</string>
+            </dict>
+        </array>
     </dict>
 </plist>

@@ -17,6 +17,11 @@
 		04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */; };
 		04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E81FAFFEB30004E329 /* TDBaseTableViewController.swift */; };
 		04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EA1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift */; };
+		04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EC1FAFFFF00004E329 /* TDHomeViewController.swift */; };
+		04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EE1FB000170004E329 /* TDContentViewController.swift */; };
+		04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F01FB000390004E329 /* TDCommunityViewController.swift */; };
+		04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */; };
+		04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F41FB00B310004E329 /* TDPublishViewController.swift */; };
 		93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +60,11 @@
 		04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseViewController.swift; sourceTree = "<group>"; };
 		04AB16E81FAFFEB30004E329 /* TDBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewController.swift; sourceTree = "<group>"; };
 		04AB16EA1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseNavigationViewController.swift; sourceTree = "<group>"; };
+		04AB16EC1FAFFFF00004E329 /* TDHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDHomeViewController.swift; sourceTree = "<group>"; };
+		04AB16EE1FB000170004E329 /* TDContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentViewController.swift; sourceTree = "<group>"; };
+		04AB16F01FB000390004E329 /* TDCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCommunityViewController.swift; sourceTree = "<group>"; };
+		04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileTableViewController.swift; sourceTree = "<group>"; };
+		04AB16F41FB00B310004E329 /* TDPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPublishViewController.swift; sourceTree = "<group>"; };
 		A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-成长之路APP-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,9 +158,9 @@
 				044E8DD71FAFFBA7003A4761 /* Main */,
 				044E8DCD1FAFFBA7003A4761 /* Home */,
 				044E8DC81FAFFBA7003A4761 /* Content */,
+				044E8DE11FAFFBA7003A4761 /* Publish */,
 				044E8DC31FAFFBA7003A4761 /* Community */,
 				044E8DDC1FAFFBA7003A4761 /* Profile */,
-				044E8DE11FAFFBA7003A4761 /* Publish */,
 				044E8DD21FAFFBA7003A4761 /* Login */,
 			);
 			path = Modules;
@@ -209,6 +219,7 @@
 		044E8DC51FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16F01FB000390004E329 /* TDCommunityViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +259,7 @@
 		044E8DCA1FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16EE1FB000170004E329 /* TDContentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 		044E8DCF1FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16EC1FAFFFF00004E329 /* TDHomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +417,7 @@
 		044E8DDE1FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -443,6 +457,7 @@
 		044E8DE31FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16F41FB00B310004E329 /* TDPublishViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -745,8 +760,13 @@
 			files = (
 				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
+				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
+				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
+				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
+				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
+				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
