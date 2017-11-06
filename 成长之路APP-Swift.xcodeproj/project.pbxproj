@@ -12,6 +12,11 @@
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
 		0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */; };
 		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
+		04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A976F41FAFF99D0060212D /* TabBarConfig.plist */; };
+		04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */; };
+		04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */; };
+		04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E81FAFFEB30004E329 /* TDBaseTableViewController.swift */; };
+		04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EA1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift */; };
 		93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,11 @@
 		045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "成长之路APP-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftUITests.swift"; sourceTree = "<group>"; };
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A976F41FAFF99D0060212D /* TabBarConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
+		04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTabBarController.swift; sourceTree = "<group>"; };
+		04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseViewController.swift; sourceTree = "<group>"; };
+		04AB16E81FAFFEB30004E329 /* TDBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewController.swift; sourceTree = "<group>"; };
+		04AB16EA1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseNavigationViewController.swift; sourceTree = "<group>"; };
 		A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-成长之路APP-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +97,7 @@
 				044BF8271FAFF35800B20A30 /* Resource */,
 				044BF8281FAFF35800B20A30 /* ThirdParty */,
 				044BF8291FAFF35800B20A30 /* Utils */,
-				044BF82A1FAFF45A00B20A30 /* Others */,
+				044BF82A1FAFF45A00B20A30 /* Supporting Files */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -103,6 +113,10 @@
 		044BF8221FAFF35800B20A30 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				04AB16E51FAFFE620004E329 /* BaseNavigationViewController */,
+				04AB16E31FAFFE620004E329 /* BaseTableViewController */,
+				04AB16E41FAFFE620004E329 /* BaseViewController */,
+				04AB16E01FAFFD840004E329 /* BaseTabBarController */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -131,6 +145,13 @@
 		044BF8261FAFF35800B20A30 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				044E8DD71FAFFBA7003A4761 /* Main */,
+				044E8DCD1FAFFBA7003A4761 /* Home */,
+				044E8DC81FAFFBA7003A4761 /* Content */,
+				044E8DC31FAFFBA7003A4761 /* Community */,
+				044E8DDC1FAFFBA7003A4761 /* Profile */,
+				044E8DE11FAFFBA7003A4761 /* Publish */,
+				044E8DD21FAFFBA7003A4761 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -139,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0459313D1FAB435600E4F86E /* Assets.xcassets */,
+				04A976F41FAFF99D0060212D /* TabBarConfig.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -157,13 +179,286 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		044BF82A1FAFF45A00B20A30 /* Others */ = {
+		044BF82A1FAFF45A00B20A30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */,
 				045931421FAB435600E4F86E /* Info.plist */,
 			);
-			path = Others;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		044E8DC31FAFFBA7003A4761 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DC41FAFFBA7003A4761 /* Host */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		044E8DC41FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DC51FAFFBA7003A4761 /* Controller */,
+				044E8DC61FAFFBA7003A4761 /* Model */,
+				044E8DC71FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DC51FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DC61FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DC71FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DC81FAFFBA7003A4761 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DC91FAFFBA7003A4761 /* Host */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		044E8DC91FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DCA1FAFFBA7003A4761 /* Controller */,
+				044E8DCB1FAFFBA7003A4761 /* Model */,
+				044E8DCC1FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DCA1FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DCB1FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DCC1FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DCD1FAFFBA7003A4761 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DCE1FAFFBA7003A4761 /* Host */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		044E8DCE1FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DCF1FAFFBA7003A4761 /* Controller */,
+				044E8DD01FAFFBA7003A4761 /* Model */,
+				044E8DD11FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DCF1FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DD01FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DD11FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DD21FAFFBA7003A4761 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DD31FAFFBA7003A4761 /* Host */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		044E8DD31FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DD41FAFFBA7003A4761 /* Controller */,
+				044E8DD51FAFFBA7003A4761 /* Model */,
+				044E8DD61FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DD41FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DD51FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DD61FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DD71FAFFBA7003A4761 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DD81FAFFBA7003A4761 /* Host */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		044E8DD81FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DD91FAFFBA7003A4761 /* Controller */,
+				044E8DDA1FAFFBA7003A4761 /* Model */,
+				044E8DDB1FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DD91FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DDA1FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DDB1FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DDC1FAFFBA7003A4761 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DDD1FAFFBA7003A4761 /* Host */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		044E8DDD1FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DDE1FAFFBA7003A4761 /* Controller */,
+				044E8DDF1FAFFBA7003A4761 /* Model */,
+				044E8DE01FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DDE1FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DDF1FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DE01FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		044E8DE11FAFFBA7003A4761 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DE21FAFFBA7003A4761 /* Host */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		044E8DE21FAFFBA7003A4761 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				044E8DE31FAFFBA7003A4761 /* Controller */,
+				044E8DE41FAFFBA7003A4761 /* Model */,
+				044E8DE51FAFFBA7003A4761 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		044E8DE31FAFFBA7003A4761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044E8DE41FAFFBA7003A4761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044E8DE51FAFFBA7003A4761 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0459312A1FAB435600E4F86E = {
@@ -212,6 +507,38 @@
 				045931581FAB435600E4F86E /* Info.plist */,
 			);
 			path = "成长之路APP-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		04AB16E01FAFFD840004E329 /* BaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */,
+			);
+			path = BaseTabBarController;
+			sourceTree = "<group>";
+		};
+		04AB16E31FAFFE620004E329 /* BaseTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04AB16E81FAFFEB30004E329 /* TDBaseTableViewController.swift */,
+			);
+			path = BaseTableViewController;
+			sourceTree = "<group>";
+		};
+		04AB16E41FAFFE620004E329 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04AB16E61FAFFE930004E329 /* TDBaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		04AB16E51FAFFE620004E329 /* BaseNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04AB16EA1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift */,
+			);
+			path = BaseNavigationViewController;
 			sourceTree = "<group>";
 		};
 		652447A0F67FDEC2F95C3FBF /* Pods */ = {
@@ -342,6 +669,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */,
+				04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */,
 				0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +743,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
+				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
+				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
+				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
