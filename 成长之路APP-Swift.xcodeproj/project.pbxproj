@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */; };
+		04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B591FB1E62100FE0913 /* UIView+Extension.swift */; };
+		04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
 		0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459313D1FAB435600E4F86E /* Assets.xcassets */; };
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		028FB0C4F483882E3F6AFE89 /* Pods-成长之路APP-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		04109B591FB1E62100FE0913 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extenstion.swift"; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931361FAB435600E4F86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0459313D1FAB435600E4F86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */,
+				04109B591FB1E62100FE0913 /* UIView+Extension.swift */,
+				04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -773,8 +779,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
+				04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
+				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
