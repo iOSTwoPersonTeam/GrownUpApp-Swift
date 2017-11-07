@@ -15,8 +15,6 @@ pod 'PullToRefreshKit'    ,'0.7.0'            #下拉刷新  多种刷新样式
 pod 'SDCycleScrollView'   ,'1.73'             #轮播图
 pod 'DZNEmptyDataSet'     ,'1.8.1'            #空页面展示效果
 
-
-
 end
 
 

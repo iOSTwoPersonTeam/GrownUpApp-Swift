@@ -12,24 +12,21 @@ class TDBaseNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+        navigationItem.hidesBackButton = true
+        
+        let attributes = [
+            NSAttributedStringKey.foregroundColor : UIColor.hexInt(0x333333),
+            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)
+        ]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UINavigationBar.appearance().tintColor = UIColor.hexInt(0x333333)
 
-        // Do any additional setup after loading the view.
+        
+        let img = UIImage.init(named: "btn_back_n")?.resizableImage(withCapInsets: UIEdgeInsets.init(top: 0, left: 18, bottom: 0, right: 0))
+    UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-1000, 0), for: .default)    // 让导航条返回键带的title消失!
+        UIBarButtonItem.appearance().setBackButtonBackgroundImage(img, for: .normal, barMetrics: .default)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
