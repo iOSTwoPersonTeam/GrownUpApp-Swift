@@ -32,13 +32,7 @@ class TDBaseTabBarController: UITabBarController {
     //按钮正常状态下的图片数组
     lazy var normalImageArray:[UIImage] = {
         var tempArray: [UIImage] = [UIImage]()
-        //数组添加的方法
-//        tempArray.append(UIImage.init(named: "tabbar_find_n")!)
-//        tempArray.append(UIImage.init(named: "tabbar_sound_n")!)
-//        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
-//        tempArray.append(UIImage.init(named: "tabbar_download_n")!)
-//        tempArray.append(UIImage.init(named: "tabbar_me_n")!)
-        
+        //本地数组获取数据
         for dictionary in self.tarbarConfigArr {
             tempArray.append(UIImage.init(named: dictionary["NormalImg"]!)!)
         }
@@ -49,12 +43,6 @@ class TDBaseTabBarController: UITabBarController {
     //按钮选中状态下的图片数组
     lazy var selectImageArray: [UIImage] = {
         var tempArray: [UIImage] = [UIImage]()
-//        tempArray.append(UIImage.init(named: "tabbar_find_h")!)
-//        tempArray.append(UIImage.init(named: "tabbar_sound_h")!)
-//        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
-//        tempArray.append(UIImage.init(named: "tabbar_download_h")!)
-//        tempArray.append(UIImage.init(named: "tabbar_me_h")!)
-        
         //从本地获取数据
         for dictionary in self.tarbarConfigArr {
             tempArray.append(UIImage.init(named: dictionary["SelectedImg"]!)!)
