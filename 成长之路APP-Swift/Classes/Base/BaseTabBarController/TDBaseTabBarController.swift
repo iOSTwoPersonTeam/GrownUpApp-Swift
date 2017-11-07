@@ -15,6 +15,9 @@ let kTabBarH: CGFloat = 49
 
 class TDBaseTabBarController: UITabBarController {
 
+    //初始化数组
+    var tarbarConfigArr:[Dictionary<String,String>]! //标签栏配置数组，从Plist文件中读取
+
     //MARK: -普通属性
     //后方的背景的图片
     lazy var bgImageView: UIImageView = {
@@ -29,36 +32,57 @@ class TDBaseTabBarController: UITabBarController {
     //按钮正常状态下的图片数组
     lazy var normalImageArray:[UIImage] = {
         var tempArray: [UIImage] = [UIImage]()
-        tempArray.append(UIImage.init(named: "tabbar_find_n")!)
-        tempArray.append(UIImage.init(named: "tabbar_sound_n")!)
-        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
-        tempArray.append(UIImage.init(named: "tabbar_download_n")!)
-        tempArray.append(UIImage.init(named: "tabbar_me_n")!)
+        //数组添加的方法
+//        tempArray.append(UIImage.init(named: "tabbar_find_n")!)
+//        tempArray.append(UIImage.init(named: "tabbar_sound_n")!)
+//        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
+//        tempArray.append(UIImage.init(named: "tabbar_download_n")!)
+//        tempArray.append(UIImage.init(named: "tabbar_me_n")!)
+        
+        for dictionary in self.tarbarConfigArr {
+            tempArray.append(UIImage.init(named: dictionary["NormalImg"]!)!)
+        }
+        DLog(message: tempArray)
         return tempArray
     }()
     
     //按钮选中状态下的图片数组
     lazy var selectImageArray: [UIImage] = {
         var tempArray: [UIImage] = [UIImage]()
-        tempArray.append(UIImage.init(named: "tabbar_find_h")!)
-        tempArray.append(UIImage.init(named: "tabbar_sound_h")!)
-        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
-        tempArray.append(UIImage.init(named: "tabbar_download_h")!)
-        tempArray.append(UIImage.init(named: "tabbar_me_h")!)
+//        tempArray.append(UIImage.init(named: "tabbar_find_h")!)
+//        tempArray.append(UIImage.init(named: "tabbar_sound_h")!)
+//        tempArray.append(UIImage.init(named: "tabbar_np_playnon")!)
+//        tempArray.append(UIImage.init(named: "tabbar_download_h")!)
+//        tempArray.append(UIImage.init(named: "tabbar_me_h")!)
+        
+        //从本地获取数据
+        for dictionary in self.tarbarConfigArr {
+            tempArray.append(UIImage.init(named: dictionary["SelectedImg"]!)!)
+        }
         return tempArray
     }()
+    
+    //MARK: Private Methods  获取本地plist文件中的数据
+    func getConfigArrFromPlistFile() -> ([NSDictionary]?){
+        let filePath:String? = Bundle.main.path(forResource: "TabBarConfig", ofType: "plist")
+        let plistData = NSDictionary.init(contentsOfFile: filePath ?? "")
+        let configArr = plistData?.object(forKey: "Tabbars") as? [Dictionary<String,String>]
+        return configArr! as [NSDictionary]
+    }
     
     //MARK: -生命周期
     override func viewDidLoad() {  //override重载方法的标识符
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //读取plist文件,初始化标签栏配置数组
+        self.tarbarConfigArr = self.getConfigArrFromPlistFile() as? [Dictionary<String, String>]
         //自定义tabBar
         createCustomTabBar()
         //配置子控件
         configSubControllers()
-        
     }
+
     
 }
 

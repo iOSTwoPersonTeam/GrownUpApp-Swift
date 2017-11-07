@@ -936,6 +936,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

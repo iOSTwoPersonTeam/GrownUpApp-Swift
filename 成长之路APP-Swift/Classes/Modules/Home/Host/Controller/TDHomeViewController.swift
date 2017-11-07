@@ -13,6 +13,7 @@ class TDHomeViewController: TDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        view.backgroundColor = UIColor.orange
+        DLog(message: "123-----")
         // Do any additional setup after loading the view.
     }
 
