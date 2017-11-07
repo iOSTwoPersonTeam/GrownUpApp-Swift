@@ -1,12 +1,36 @@
 PODS:
-  - Masonry (1.1.0)
+  - Alamofire (4.5.1)
+  - DZNEmptyDataSet (1.8.1)
+  - ObjectMapper (3.0.0)
+  - PullToRefreshKit (0.7.0)
+  - SDCycleScrollView (1.73):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Masonry (= 1.1.0)
+  - Alamofire (= 4.5.1)
+  - DZNEmptyDataSet (= 1.8.1)
+  - ObjectMapper (= 3.0.0)
+  - PullToRefreshKit (= 0.7.0)
+  - SDCycleScrollView (= 1.73)
+  - SDWebImage (= 4.0.0)
+  - SnapKit (= 4.0.0)
+  - SwiftyJSON (= 3.1.4)
 
 SPEC CHECKSUMS:
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  PullToRefreshKit: 8a1de4451090e30094f266393cb4642d4a47d899
+  SDCycleScrollView: d0fd5fe40a80918371fd8939214eb3be81033d83
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 38c2a934f0742ff1ed4b62e09404d6598dc5957d
+PODFILE CHECKSUM: 03cb0efa9d362ccbde2bde80fa1ab13100aa3673
 
 COCOAPODS: 1.2.1

@@ -23,7 +23,7 @@
 		04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F01FB000390004E329 /* TDCommunityViewController.swift */; };
 		04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */; };
 		04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F41FB00B310004E329 /* TDPublishViewController.swift */; };
-		93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */; };
+		0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 		04AB16F01FB000390004E329 /* TDCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCommunityViewController.swift; sourceTree = "<group>"; };
 		04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileTableViewController.swift; sourceTree = "<group>"; };
 		04AB16F41FB00B310004E329 /* TDPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPublishViewController.swift; sourceTree = "<group>"; };
-		A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-成长之路APP-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____APP_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93891E0C750A8269255427B5 /* libPods-成长之路APP-Swift.a in Frameworks */,
+				0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +571,7 @@
 		92028842BFEE2F3859B36309 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A95ABE411C007BD6CF43D6F3 /* libPods-成长之路APP-Swift.a */,
+				E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -936,7 +936,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/成长之路APP-Swift/Classes/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "-DEBUG";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.topad.jike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
