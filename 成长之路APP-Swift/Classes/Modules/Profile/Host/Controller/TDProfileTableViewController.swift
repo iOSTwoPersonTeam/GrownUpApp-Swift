@@ -56,18 +56,55 @@ class TDProfileTableViewController: TDBaseViewController {
         let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: self.view.height - 49), style: UITableViewStyle.grouped)
         tableView.delegate = self as? UITableViewDelegate
         tableView.dataSource = self as? UITableViewDataSource
-        
+        tableView.backgroundColor = UIColor.hexInt(0xf3f3f3)
+        self.view.addSubview(tableView)
         return tableView
     }()
     
+    //列表标题数组
+    lazy var titleArray: [[String]] = {
+        
+        return [[kMeSubScribe, kMePlayHistory],
+                [kMeHasBuy, kMeWallet],
+                [kMeLXFStore, kMeStoreOrder, kMeCoupon, kMeGameenter, kMeSnartDevice],
+                [kMeFreeTrafic, kMeFeedBack, kMeSetting]]
+    }()
+    
+    //列表图标数组
+    lazy var imageArray: [[String]] = {
+        
+        return [[kMeSubScribeIcon, kMePlayHistoryIcon],
+                [kMeHasBuyIcon, kMeWalletIcon],
+                [kMeLXFStoreIcon, kMeStoreOrderIcon, kMeCouponIcon, kMeGameenterIcon, kMeSnartDeviceIcon],
+                [kMeFreeTraficIcon, kMeFeedBackIcon, kMeSettingIcon]]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.hexInt(0xf3f3f3)
+        automaticallyAdjustsScrollViewInsets = false
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
 
 }
 
+
+
+//MARK: -tableView 代理 & 数据源
+//extension TDProfileTableViewController: UITableViewDelegate, UITableViewDataSource {
+//    
+//    
+//    
+//    
+//    
+//}
 
 
 
