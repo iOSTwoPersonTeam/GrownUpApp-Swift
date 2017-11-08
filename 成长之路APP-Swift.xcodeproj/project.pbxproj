@@ -16,6 +16,7 @@
 		0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */; };
 		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
 		047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */; };
+		047BD1791FB30A04001C38F2 /* TDSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1781FB30A04001C38F2 /* TDSettingViewController.swift */; };
 		04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5307A1FB03F74003CAFD6 /* Common.swift */; };
 		04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A976F41FAFF99D0060212D /* TabBarConfig.plist */; };
 		04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */; };
@@ -64,6 +65,7 @@
 		045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftUITests.swift"; sourceTree = "<group>"; };
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileHeaderView.swift; sourceTree = "<group>"; };
+		047BD1781FB30A04001C38F2 /* TDSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSettingViewController.swift; sourceTree = "<group>"; };
 		04A5307A1FB03F74003CAFD6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		04A976F41FAFF99D0060212D /* TabBarConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
 		04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				044E8DDD1FAFFBA7003A4761 /* Host */,
+				047BD1741FB309B8001C38F2 /* Setting */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -545,6 +548,38 @@
 				045931581FAB435600E4F86E /* Info.plist */,
 			);
 			path = "成长之路APP-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		047BD1741FB309B8001C38F2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				047BD1751FB309B8001C38F2 /* Controller */,
+				047BD1761FB309B8001C38F2 /* Model */,
+				047BD1771FB309B8001C38F2 /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		047BD1751FB309B8001C38F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				047BD1781FB30A04001C38F2 /* TDSettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		047BD1761FB309B8001C38F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		047BD1771FB309B8001C38F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		04AB16E01FAFFD840004E329 /* BaseTabBarController */ = {
@@ -794,6 +829,7 @@
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
 				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
+				047BD1791FB30A04001C38F2 /* TDSettingViewController.swift in Sources */,
 				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
 			);

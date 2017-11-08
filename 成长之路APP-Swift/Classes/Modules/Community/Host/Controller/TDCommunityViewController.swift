@@ -13,6 +13,7 @@ class TDCommunityViewController: TDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.blue
+        title = "下载听"
         // Do any additional setup after loading the view.
     }
 

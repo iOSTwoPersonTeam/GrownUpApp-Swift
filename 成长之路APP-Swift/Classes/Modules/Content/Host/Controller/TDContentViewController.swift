@@ -13,6 +13,7 @@ class TDContentViewController: TDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.red
+        title = "订阅听"
         // Do any additional setup after loading the view.
     }
 

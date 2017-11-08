@@ -50,6 +50,9 @@ let headerViewH: CGFloat = 288
 
 class TDProfileTableViewController: TDBaseViewController {
 
+    //MARK: -普通属性
+    var lightFlag: Bool = true
+    
     //MARK:-懒加载属性
     //tableView
     lazy var tableView: UITableView = {
@@ -84,6 +87,14 @@ class TDProfileTableViewController: TDBaseViewController {
         return view
     }()
     
+    //状态栏
+    lazy var statusBackView: UIView = {
+        let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height:20 ))
+        self.view.addSubview(view)
+        self.view.bringSubview(toFront: view)
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexInt(0xf3f3f3)
@@ -100,6 +111,14 @@ class TDProfileTableViewController: TDBaseViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    //MARK: -设置状态栏样式
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if lightFlag {
+            return UIStatusBarStyle.lightContent
+        } else {
+            return UIStatusBarStyle.default
+        }
+    }
 
 }
 
@@ -179,6 +198,59 @@ extension TDProfileTableViewController: UITableViewDelegate, UITableViewDataSour
     }
     
 }
+
+//MARK: -滚动tableView
+extension TDProfileTableViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY <= 0 {
+            headerView.frame = CGRect.init(x: offsetY * 0.5, y: offsetY, width: SCREENWITH - offsetY, height: headerViewH - offsetY)
+        }
+        
+        //随机设置状态栏样式
+        if offsetY < 200.0 {
+            statusBackView.alpha = 0.0
+            setStatusBarStyle(islight: true)
+        } else if offsetY >= 200 && offsetY < 220 {
+            let alpha:CGFloat = (offsetY - 200) / 20.0
+            view.bringSubview(toFront: statusBackView)
+            statusBackView.alpha = alpha
+        } else {
+            statusBackView.alpha = 1.0
+            view.bringSubview(toFront: statusBackView)
+            setStatusBarStyle(islight: false)
+        }
+        
+    }
+    
+    //设置状态栏样式
+    func setStatusBarStyle(islight: Bool) {
+        if islight && lightFlag == false {
+            lightFlag = true
+            setNeedsStatusBarAppearanceUpdate() //更新状态栏样式
+        } else if !islight && lightFlag == true {
+            
+            lightFlag = false
+            setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
