@@ -78,12 +78,20 @@ class TDProfileTableViewController: TDBaseViewController {
                 [kMeFreeTraficIcon, kMeFeedBackIcon, kMeSettingIcon]]
     }()
     
+    //头部视图
+    lazy var headerView: TDProfileHeaderView = {
+        let view = TDProfileHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: headerViewH))
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexInt(0xf3f3f3)
         automaticallyAdjustsScrollViewInsets = false
         //添加tableView
          self.view.addSubview(tableView)
+        /// 初始化
+        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +101,15 @@ class TDProfileTableViewController: TDBaseViewController {
     }
     
 
+}
+
+// MARK:- 初始化
+extension TDProfileTableViewController {
+    /// 初始化视图
+    fileprivate func setupView() {
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: SCREENWITH, height: headerViewH))
+        tableView.addSubview(headerView)
+    }
 }
 
 

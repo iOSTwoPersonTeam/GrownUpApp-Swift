@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 //当前系统版本
 let TDSystemVersion = (UIDevice.current.systemVersion as NSString).floatValue
