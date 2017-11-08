@@ -24,7 +24,7 @@
 		04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EC1FAFFFF00004E329 /* TDHomeViewController.swift */; };
 		04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16EE1FB000170004E329 /* TDContentViewController.swift */; };
 		04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F01FB000390004E329 /* TDCommunityViewController.swift */; };
-		04AB16F31FB000810004E329 /* TDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F21FB000810004E329 /* TDProfileViewController.swift */; };
+		04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */; };
 		04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F41FB00B310004E329 /* TDPublishViewController.swift */; };
 		0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,7 @@
 		04AB16EC1FAFFFF00004E329 /* TDHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDHomeViewController.swift; sourceTree = "<group>"; };
 		04AB16EE1FB000170004E329 /* TDContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentViewController.swift; sourceTree = "<group>"; };
 		04AB16F01FB000390004E329 /* TDCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCommunityViewController.swift; sourceTree = "<group>"; };
-		04AB16F21FB000810004E329 /* TDProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileViewController.swift; sourceTree = "<group>"; };
+		04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileTableViewController.swift; sourceTree = "<group>"; };
 		04AB16F41FB00B310004E329 /* TDPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPublishViewController.swift; sourceTree = "<group>"; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____APP_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -437,7 +437,7 @@
 		044E8DDE1FAFFBA7003A4761 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04AB16F21FB000810004E329 /* TDProfileViewController.swift */,
+				04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -788,7 +788,7 @@
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
-				04AB16F31FB000810004E329 /* TDProfileViewController.swift in Sources */,
+				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
 				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,

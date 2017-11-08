@@ -130,7 +130,7 @@ extension TDBaseTabBarController {  //extension 扩展类方法 写在class方�
         let communityVC = navigationControllerWith(TDCommunityViewController())
         tempArr.append(communityVC)
         //我的
-        let profileVC = navigationControllerWith(TDProfileViewController())
+        let profileVC = navigationControllerWith(TDProfileTableViewController())
         tempArr.append(profileVC)
         
         viewControllers = tempArr
