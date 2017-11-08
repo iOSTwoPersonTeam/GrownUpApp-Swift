@@ -15,6 +15,7 @@
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
 		0459314C1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459314B1FAB435600E4F86E /* 成长之路APP_SwiftTests.swift */; };
 		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
+		047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */; };
 		04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5307A1FB03F74003CAFD6 /* Common.swift */; };
 		04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A976F41FAFF99D0060212D /* TabBarConfig.plist */; };
 		04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */; };
@@ -62,6 +63,7 @@
 		045931521FAB435600E4F86E /* 成长之路APP-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "成长之路APP-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "成长之路APP_SwiftUITests.swift"; sourceTree = "<group>"; };
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileHeaderView.swift; sourceTree = "<group>"; };
 		04A5307A1FB03F74003CAFD6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		04A976F41FAFF99D0060212D /* TabBarConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
 		04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 		044E8DE01FAFFBA7003A4761 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 			files = (
 				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
 				04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */,
+				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,

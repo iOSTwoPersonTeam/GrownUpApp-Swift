@@ -53,11 +53,10 @@ class TDProfileTableViewController: TDBaseViewController {
     //MARK:-懒加载属性
     //tableView
     lazy var tableView: UITableView = {
-        let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: self.view.height - 49), style: UITableViewStyle.grouped)
-        tableView.delegate = self as? UITableViewDelegate
-        tableView.dataSource = self as? UITableViewDataSource
+        let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: SCREENHEIGHT - 49), style: UITableViewStyle.grouped)
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.backgroundColor = UIColor.hexInt(0xf3f3f3)
-        self.view.addSubview(tableView)
         return tableView
     }()
     
@@ -83,7 +82,8 @@ class TDProfileTableViewController: TDBaseViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexInt(0xf3f3f3)
         automaticallyAdjustsScrollViewInsets = false
-        
+        //添加tableView
+         self.view.addSubview(tableView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,13 +98,70 @@ class TDProfileTableViewController: TDBaseViewController {
 
 
 //MARK: -tableView 代理 & 数据源
-//extension TDProfileTableViewController: UITableViewDelegate, UITableViewDataSource {
-//    
-//    
-//    
-//    
-//    
-//}
+extension TDProfileTableViewController: UITableViewDelegate, UITableViewDataSource {
+    //MARK: 数据源
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.titleArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.titleArray[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let subTextArr = titleArray[indexPath.section]
+        let imgArr = imageArray[indexPath.section]
+        
+        //cell 重用
+        let cellID = "cellID"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+        if cell == nil {
+            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: cellID)
+        }
+        //文字
+        cell?.textLabel?.text = subTextArr[indexPath.row]
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15)
+        cell?.textLabel?.textColor = RGBA(r: 0.0, g: 0.0, b: 0.0, a: 1.0)
+        //图片
+        cell?.imageView?.image = UIImage.init(named: imgArr[indexPath.row])
+        
+        //显示系统箭头
+        cell?.accessoryType = .disclosureIndicator
+        //
+        cell?.selectionStyle = .none
+        
+        return cell!
+    }
+    
+    //MARK: 代理
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor.clear
+        return view
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor.hexInt(0xf3f3f3)
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+}
 
 
 
