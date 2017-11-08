@@ -171,7 +171,13 @@ extension TDProfileTableViewController: UITableViewDelegate, UITableViewDataSour
     
     //MARK: 代理
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let cell = tableView.cellForRow(at: indexPath)
+        guard let title = cell?.textLabel?.text else {
+            return
+        }
+        if title == kMeSetting {  //设置
+            junpSetting()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -239,7 +245,15 @@ extension TDProfileTableViewController: UIScrollViewDelegate {
 }
 
 
-
+//MARK: -界面跳转
+extension TDProfileTableViewController {
+    //MARK: -设置
+    fileprivate func junpSetting() {
+        let settingVC = TDSettingViewController()
+        settingVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(settingVC, animated: true)
+    }
+}
 
 
 
