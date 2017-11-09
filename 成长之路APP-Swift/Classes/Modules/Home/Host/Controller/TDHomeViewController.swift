@@ -12,8 +12,10 @@ class TDHomeViewController: TDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //作为导航控制器的的根视图控制器不需要父类中的返回按钮
+        self.navigationItem.leftBarButtonItem = nil;
+        navigationItem.title = "首页"
        view.backgroundColor = UIColor.orange
-        title = "发现"
         DLog(message: "123-----")
         // Do any additional setup after loading the view.
     }

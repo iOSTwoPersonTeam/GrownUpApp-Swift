@@ -71,15 +71,21 @@ class TDBaseTabBarController: UITabBarController {
         configSubControllers()
     }
 
+    //TODO --注意在ios11之后 要在viewDidAppear 视图加载完成的方法中 隐藏并删除系统自带Tabbar*******
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //在自定义tabBar之前 应该先隐藏原有TabBar 删除TabBar
+        self.tabBar.isHidden = true;
+        tabBar.removeFromSuperview()
+    }
     
 }
 
 //MARK: -初始化  extension 扩展类方法
 extension TDBaseTabBarController {  //extension 扩展类方法 写在class方法外部
+
     //MARK: 自定义tabBar
     func createCustomTabBar()  {
-        //隐藏原有TabBar
-        tabBar.isHidden = true
         //添加TabBar背景图
         view.addSubview(bgImageView)
         

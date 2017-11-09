@@ -12,8 +12,10 @@ class TDCommunityViewController: TDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //作为导航控制器的的根视图控制器不需要父类中的返回按钮
+        self.navigationItem.leftBarButtonItem = nil;
+        navigationItem.title = "社区"
         view.backgroundColor = UIColor.blue
-        title = "下载听"
         // Do any additional setup after loading the view.
     }
 

@@ -97,6 +97,8 @@ class TDProfileTableViewController: TDBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //作为导航控制器的的根视图控制器不需要父类中的返回按钮
+        self.navigationItem.leftBarButtonItem = nil;
         view.backgroundColor = UIColor.hexInt(0xf3f3f3)
         automaticallyAdjustsScrollViewInsets = false
         //添加tableView
@@ -109,6 +111,11 @@ class TDProfileTableViewController: TDBaseViewController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     //MARK: -设置状态栏样式

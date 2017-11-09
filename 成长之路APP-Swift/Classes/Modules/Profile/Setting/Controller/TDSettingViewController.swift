@@ -12,16 +12,15 @@ class TDSettingViewController: TDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         title = "设置"
+
         view.backgroundColor = UIColor.orange
         // Do any additional setup after loading the view.
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
-    
 
 }
