@@ -14,7 +14,7 @@ let kSystemBlackColor = UIColor.init(red: 0.38, green: 0.39, blue: 0.40, alpha: 
 //MARK: --协议代理
 protocol TDHomeSubTitleViewDelagate: NSObjectProtocol {
     //当前选中第index个标题的代理销毁
-    func homeSubTitleViewDidSelected(titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String)
+    func homeSubTitleViewDidSelected(_ titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String)
 }
 
 
@@ -41,7 +41,7 @@ class TDHomeSubTitleView: UIView {
         view.backgroundColor = kSysTemOriginColor
         self.addSubview(view)
         view.snp.makeConstraints({ (make) in
-        make.size.equalTo(CGSize.init(width: 30, height: 2))
+            make.size.equalTo(CGSize.init(width: 30, height: 2))
             make.bottom.equalTo(self.snp.bottom)
             make.left.equalTo(self.snp.left).offset(5)
         })
@@ -63,7 +63,7 @@ extension TDHomeSubTitleView {
             return
         }
         let btn = subTitleBtnArray[index]
-        selectedAtBtn(btn: btn, isfirstStart: false)
+        selectedAtBtn(btn, isfirstStart: false)
     }
 }
 
@@ -92,14 +92,15 @@ extension TDHomeSubTitleView {
     guard let firstBtn = subTitleBtnArray.first else {
         return
     }
-    selectedAtBtn(btn: firstBtn, isfirstStart: true)
+    selectedAtBtn(firstBtn, isfirstStart: true)
 
   }
     ///当前选中某一个按钮
-    func selectedAtBtn(btn: UIButton, isfirstStart: Bool) {
+   fileprivate func selectedAtBtn(_ btn: UIButton, isfirstStart: Bool) {
         btn.isSelected = true
         currentSelectedBtn = btn
-        sliderView.snp.makeConstraints { (make) in
+    //MARK: -- 注意:这里重新更新frame时候要用updateConstraints
+        self.sliderView.snp.updateConstraints { (make) in
             make.left.equalTo(self.snp.left).offset(btn.x + btn.width * 0.5 - 15)
         }
         if !isfirstStart {
@@ -129,8 +130,8 @@ extension TDHomeSubTitleView {
             return
         }
         //实际上 代替了 responsed
-    delegate?.homeSubTitleViewDidSelected(titleView: self, atIndex: subTitleBtnArray.index(of: btn)!, title: btn.titleLabel?.text ?? "")
-    selectedAtBtn(btn: btn, isfirstStart: false)
+    delegate?.homeSubTitleViewDidSelected(self, atIndex: subTitleBtnArray.index(of: btn)!, title: btn.titleLabel?.text ?? "")
+    selectedAtBtn(btn, isfirstStart: false)
     }
 }
 

@@ -84,7 +84,7 @@ extension TDHomeViewController: TDPageViewControllerDelegate {
 
 // MARK -TDHomeDubTitleViewDelagate代理 上面标题View
 extension TDHomeViewController: TDHomeSubTitleViewDelagate {
-    func homeSubTitleViewDidSelected(titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String) {
+    func homeSubTitleViewDidSelected(_ titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String) {
         // 跳转相对应的子标题界面
         tdPageVC.setCurrnetSubControllerWith(index: atIndex)
     }
