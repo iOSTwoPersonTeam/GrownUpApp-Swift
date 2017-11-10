@@ -12,7 +12,7 @@ class TDCategoryViewController: TDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }
 

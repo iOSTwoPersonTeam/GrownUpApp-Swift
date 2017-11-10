@@ -84,7 +84,7 @@ extension TDHomeSubTitleView {
         ) * btnW, y: 0, width: btnW, height: 38)
        btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         btn.adjustsImageWhenDisabled  = false
-        btn.addTarget(self, action: Selector("subTitleClick"), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(subTitleClick(_ :)), for: UIControlEvents.touchUpInside)
         subTitleBtnArray.append(btn)
         addSubview(btn)
     }
@@ -124,7 +124,7 @@ extension TDHomeSubTitleView {
 
 //MARK: --事件监听
 extension TDHomeSubTitleView {
-   @objc func subTitleClick(btn: UIButton) {
+   @objc func subTitleClick(_ btn: UIButton) {
         if btn == currentSelectedBtn {
             return
         }

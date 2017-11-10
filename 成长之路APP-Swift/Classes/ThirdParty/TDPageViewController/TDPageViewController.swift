@@ -43,7 +43,8 @@ class TDPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //初始化
-        
+        // 初始化
+        setup()
     }
 
 }
@@ -62,6 +63,8 @@ extension TDPageViewController {
         page.dataSource = self
         page.setViewControllers([controllers.first!], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         page.view.frame = self.view.frame
+        pageVC = page
+        
         self.view.addSubview(page.view)
     
     }
@@ -79,11 +82,13 @@ extension TDPageViewController {
 // MARK: --代理与数据源
 extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     ///前一个控制器
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?  {
         guard let index = controllers.index(of: viewController) else {
             return nil
         }
-        
+        if index == 0 || index == NSNotFound {
+            return nil
+        }
         return controllers[index - 1]
     }
 
@@ -92,6 +97,10 @@ extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
         guard let index = self.controllers.index(of: viewController) else {
             return nil
         }
+        if index == NSNotFound || index == controllers.count - 1 {
+            return nil
+        }
+        
         return controllers[index + 1]
     }
     
