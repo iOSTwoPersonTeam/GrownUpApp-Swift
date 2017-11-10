@@ -29,13 +29,13 @@ class TDSubHomeFactory: NSObject {
         case TDSubHomeType.TDSubHomeTypeRecommend:
             controller = TDRecommendViewController()
         case TDSubHomeType.TDSubHomeTypeCategory:
-            controller = TDRecommendViewController()
+            controller = TDCategoryViewController()
         case TDSubHomeType.TDSubHomeTypeRadio:
-            controller = TDRecommendViewController()
+            controller = TDRadioViewController()
         case TDSubHomeType.TDSubHomeTypeRand:
-            controller = TDRecommendViewController()
+            controller = TDRankViewController()
         case TDSubHomeType.TDSubHomeTypeAnchor:
-            controller = TDRecommendViewController()
+            controller = TDAnchorViewController()
         default:
             controller = TDBaseViewController()
         }

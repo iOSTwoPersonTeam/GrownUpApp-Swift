@@ -32,6 +32,10 @@
 		04BD1DB81FB5487F00905BD9 /* TDSubHomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DB71FB5487F00905BD9 /* TDSubHomeFactory.swift */; };
 		04BD1DBA1FB5514600905BD9 /* TDHomeSubTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DB91FB5514600905BD9 /* TDHomeSubTitleView.swift */; };
 		04BD1DBD1FB5815600905BD9 /* TDPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DBC1FB5815600905BD9 /* TDPageViewController.swift */; };
+		04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DCE1FB5A0CC00905BD9 /* TDCategoryViewController.swift */; };
+		04BD1DD11FB5A0E200905BD9 /* TDRadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DD01FB5A0E200905BD9 /* TDRadioViewController.swift */; };
+		04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DD21FB5A14C00905BD9 /* TDRankViewController.swift */; };
+		04BD1DD51FB5A16B00905BD9 /* TDAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DD41FB5A16B00905BD9 /* TDAnchorViewController.swift */; };
 		0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,10 @@
 		04BD1DB71FB5487F00905BD9 /* TDSubHomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSubHomeFactory.swift; sourceTree = "<group>"; };
 		04BD1DB91FB5514600905BD9 /* TDHomeSubTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDHomeSubTitleView.swift; sourceTree = "<group>"; };
 		04BD1DBC1FB5815600905BD9 /* TDPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPageViewController.swift; sourceTree = "<group>"; };
+		04BD1DCE1FB5A0CC00905BD9 /* TDCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCategoryViewController.swift; sourceTree = "<group>"; };
+		04BD1DD01FB5A0E200905BD9 /* TDRadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRadioViewController.swift; sourceTree = "<group>"; };
+		04BD1DD21FB5A14C00905BD9 /* TDRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRankViewController.swift; sourceTree = "<group>"; };
+		04BD1DD41FB5A16B00905BD9 /* TDAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAnchorViewController.swift; sourceTree = "<group>"; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____APP_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -316,6 +324,10 @@
 			children = (
 				044E8DCE1FAFFBA7003A4761 /* Host */,
 				04BD1DB11FB5372F00905BD9 /* Recommend */,
+				04BD1DCA1FB5A04400905BD9 /* Category */,
+				04BD1DC61FB5A04400905BD9 /* Radio */,
+				04BD1DC21FB5A04300905BD9 /* Rank */,
+				04BD1DBE1FB5A04300905BD9 /* Anchor */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -666,6 +678,134 @@
 			path = TDPageViewController;
 			sourceTree = "<group>";
 		};
+		04BD1DBE1FB5A04300905BD9 /* Anchor */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DBF1FB5A04300905BD9 /* Controller */,
+				04BD1DC01FB5A04300905BD9 /* Model */,
+				04BD1DC11FB5A04300905BD9 /* Views */,
+			);
+			path = Anchor;
+			sourceTree = "<group>";
+		};
+		04BD1DBF1FB5A04300905BD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DD41FB5A16B00905BD9 /* TDAnchorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BD1DC01FB5A04300905BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BD1DC11FB5A04300905BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04BD1DC21FB5A04300905BD9 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DC31FB5A04300905BD9 /* Controller */,
+				04BD1DC41FB5A04300905BD9 /* Model */,
+				04BD1DC51FB5A04300905BD9 /* Views */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		04BD1DC31FB5A04300905BD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DD21FB5A14C00905BD9 /* TDRankViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BD1DC41FB5A04300905BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BD1DC51FB5A04300905BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04BD1DC61FB5A04400905BD9 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DC71FB5A04400905BD9 /* Controller */,
+				04BD1DC81FB5A04400905BD9 /* Model */,
+				04BD1DC91FB5A04400905BD9 /* Views */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		04BD1DC71FB5A04400905BD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DD01FB5A0E200905BD9 /* TDRadioViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BD1DC81FB5A04400905BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BD1DC91FB5A04400905BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04BD1DCA1FB5A04400905BD9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DCB1FB5A04400905BD9 /* Controller */,
+				04BD1DCC1FB5A04400905BD9 /* Model */,
+				04BD1DCD1FB5A04400905BD9 /* Views */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04BD1DCB1FB5A04400905BD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DCE1FB5A0CC00905BD9 /* TDCategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BD1DCC1FB5A04400905BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BD1DCD1FB5A04400905BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		652447A0F67FDEC2F95C3FBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,7 +1014,9 @@
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */,
+				04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
+				04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
@@ -883,8 +1025,10 @@
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04BD1DBD1FB5815600905BD9 /* TDPageViewController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
+				04BD1DD51FB5A16B00905BD9 /* TDAnchorViewController.swift in Sources */,
 				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
+				04BD1DD11FB5A0E200905BD9 /* TDRadioViewController.swift in Sources */,
 				047BD1791FB30A04001C38F2 /* TDSettingViewController.swift in Sources */,
 				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
