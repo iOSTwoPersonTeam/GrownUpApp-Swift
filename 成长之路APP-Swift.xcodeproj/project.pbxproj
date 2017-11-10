@@ -28,6 +28,7 @@
 		04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F01FB000390004E329 /* TDCommunityViewController.swift */; };
 		04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */; };
 		04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16F41FB00B310004E329 /* TDPublishViewController.swift */; };
+		04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DB51FB5377C00905BD9 /* TDRecommendViewController.swift */; };
 		0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		04AB16F01FB000390004E329 /* TDCommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCommunityViewController.swift; sourceTree = "<group>"; };
 		04AB16F21FB000810004E329 /* TDProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileTableViewController.swift; sourceTree = "<group>"; };
 		04AB16F41FB00B310004E329 /* TDPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPublishViewController.swift; sourceTree = "<group>"; };
+		04BD1DB51FB5377C00905BD9 /* TDRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendViewController.swift; sourceTree = "<group>"; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____APP_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				044E8DCE1FAFFBA7003A4761 /* Host */,
+				04BD1DB11FB5372F00905BD9 /* Recommend */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -614,6 +617,38 @@
 			path = BaseNavigationViewController;
 			sourceTree = "<group>";
 		};
+		04BD1DB11FB5372F00905BD9 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DB21FB5372F00905BD9 /* Controller */,
+				04BD1DB31FB5372F00905BD9 /* Model */,
+				04BD1DB41FB5372F00905BD9 /* Views */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		04BD1DB21FB5372F00905BD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1DB51FB5377C00905BD9 /* TDRecommendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BD1DB31FB5372F00905BD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BD1DB41FB5372F00905BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		652447A0F67FDEC2F95C3FBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,6 +855,7 @@
 				04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */,
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
+				04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
