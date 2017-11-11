@@ -8,28 +8,28 @@
 
 import UIKit
 
-//MARK: --代理协议
+// MARK: --代理协议
 protocol TDPageViewControllerDelegate: NSObjectProtocol {
-    //MARK: 获取当前子控制器的角标
+    // MARK: 获取当前子控制器的角标
     func tdPageCurrentSubControlerIndex(index: NSInteger, pageViewController: TDPageViewController)
 }
 
 class TDPageViewController: UIViewController {
     
-    //MARK: --代理
+    // MARK: --设置代理属性
     weak var delegate:  TDPageViewControllerDelegate?
     
-    //MARK: --定义属性
-    ///所有子控制器
+    // MARK: --定义属性
+    /// 所有子控制器 --定义变量
     var controllers: [UIViewController] = [UIViewController]()
-    ///父控制器
+    /// 父控制器   ---定义变量
     var superController: UIViewController!
     var pageVC: UIPageViewController!
     
-    //MARK: -init
+    // MARK: -init
     init(superController: UIViewController, controllers: [UIViewController]) {
         super.init(nibName: nil, bundle: nil)
-        //存储数据
+        // 存储数据
         self.controllers = controllers
         self.superController = superController
     }
@@ -58,6 +58,7 @@ extension TDPageViewController {
             return
         }
         let options: [String : Any] = [UIPageViewControllerOptionSpineLocationKey: NSNumber(integerLiteral: UIPageViewControllerSpineLocation.none.rawValue)]
+        // 初始化UIPageViewController
         let page = UIPageViewController.init(transitionStyle: UIPageViewControllerTransitionStyle.scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.horizontal, options: options)
         page.delegate = self
         page.dataSource = self
@@ -79,7 +80,7 @@ extension TDPageViewController {
 }
 
 
-// MARK: --代理与数据源
+// MARK: --UIPageViewController代理与数据源
 extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     ///前一个控制器
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?  {
@@ -92,7 +93,7 @@ extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
         return controllers[index - 1]
     }
 
-    ///后一个控制器
+    /// 后一个控制器
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let index = self.controllers.index(of: viewController) else {
             return nil
@@ -104,12 +105,12 @@ extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
         return controllers[index + 1]
     }
     
-    ///返回控制器数量
+    /// 返回控制器数量
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return controllers.count
     }
     
-    ///跳转到另一个控制器界面时调用
+    /// 跳转到另一个控制器界面时调用
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         guard let vc = pageViewController.viewControllers?[0] else {
             return
@@ -120,7 +121,7 @@ extension TDPageViewController: UIPageViewControllerDelegate, UIPageViewControll
         
     }
     
-    ///获取当前子控制器的角标
+    /// 当前子控制器的角标
     func indexForViewController(controller: UIViewController) -> NSInteger {
         return controllers.index(of: controller)!
     }

@@ -19,7 +19,7 @@ class TDHomeViewController: TDBaseViewController {
         return ["推荐","分类","广播","榜单","主播"]
     }()
     
-    ///子控制器
+    ///通过子标题获取初始化后的子控制器
     lazy var controllers: [UIViewController] = {
         var cons: [UIViewController] = [UIViewController]()
         for title in self.subTitleArr {
@@ -29,9 +29,10 @@ class TDHomeViewController: TDBaseViewController {
         return cons
     }()
     
-    //子标题视图
+    //懒加载子标题视图View
     lazy var subTitleView: TDHomeSubTitleView = {
         let view = TDHomeSubTitleView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 40))
+        view.delegate  = self   //遵循协议
         self.view.addSubview(view)
         return view
     }()
@@ -51,8 +52,7 @@ class TDHomeViewController: TDBaseViewController {
         navigationItem.title = "首页"
        view.backgroundColor = UIColor.init(red: 0.92, green: 0.93, blue: 0.93, alpha: 1.0)
         
-        subTitleView.delegate = self
-        subTitleView.titileArray = subTitleArr
+        self.subTitleView.titileArray = subTitleArr
         //配置子标题视图
         configSubView()
         
@@ -77,7 +77,7 @@ extension TDHomeViewController {
 extension TDHomeViewController: TDPageViewControllerDelegate {
 
     func tdPageCurrentSubControlerIndex(index: NSInteger, pageViewController: TDPageViewController) {
-        subTitleView.jumpShow(at: index)
+        subTitleView.jumpShow(at: index)   //让上面的视图标题跳转到对应位置
     }
     
 }
@@ -85,7 +85,7 @@ extension TDHomeViewController: TDPageViewControllerDelegate {
 // MARK -TDHomeDubTitleViewDelagate代理 上面标题View
 extension TDHomeViewController: TDHomeSubTitleViewDelagate {
     func homeSubTitleViewDidSelected(_ titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String) {
-        // 跳转相对应的子标题界面
+        // 跳转相对应的子标题界面   让下方的视图控制器跳转到对应位置
         tdPageVC.setCurrnetSubControllerWith(index: atIndex)
     }
 }

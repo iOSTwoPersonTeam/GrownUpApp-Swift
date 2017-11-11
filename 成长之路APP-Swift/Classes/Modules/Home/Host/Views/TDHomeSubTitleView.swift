@@ -17,7 +17,7 @@ protocol TDHomeSubTitleViewDelagate: NSObjectProtocol {
     func homeSubTitleViewDidSelected(_ titleView: TDHomeSubTitleView, atIndex: NSInteger, title: String)
 }
 
-
+// MAKR: --class声明的类 可提供外部调用
 class TDHomeSubTitleView: UIView {
 
     //MARK: --代理

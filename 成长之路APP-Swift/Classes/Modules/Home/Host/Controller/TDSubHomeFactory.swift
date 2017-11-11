@@ -9,6 +9,7 @@
 
 import UIKit
 
+//枚举的写法
 enum TDSubHomeType {
     case TDSubHomeTypeRecommend     // 推荐
     case TDSubHomeTypeCategory      // 分类
@@ -21,7 +22,7 @@ enum TDSubHomeType {
 
 class TDSubHomeFactory: NSObject {
   
-    //MARK: --生成子控制器  class这里方便外部调用
+    //MARK: ----生成对应子控制器  class这里方便外部调用
   class func subHomeVCWith(identifier: String) -> TDBaseViewController {
         let subHomeType: TDSubHomeType = TDSubHomeFactory.typeFromTitle(title: identifier)
         var controller: TDBaseViewController!  // 定义一个变量
