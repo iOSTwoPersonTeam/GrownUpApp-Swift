@@ -10,6 +10,7 @@
 		040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */; };
 		04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B591FB1E62100FE0913 /* UIView+Extension.swift */; };
 		04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */; };
+		045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
 		0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459313D1FAB435600E4F86E /* Assets.xcassets */; };
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
@@ -17,6 +18,9 @@
 		045931571FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931561FAB435600E4F86E /* 成长之路APP_SwiftUITests.swift */; };
 		047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */; };
 		047BD1791FB30A04001C38F2 /* TDSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD1781FB30A04001C38F2 /* TDSettingViewController.swift */; };
+		048629951FB727840095A920 /* TDInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048629941FB727840095A920 /* TDInterestViewController.swift */; };
+		048629971FB727A00095A920 /* TDSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048629961FB727A00095A920 /* TDSubscriptionViewController.swift */; };
+		048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048629981FB727B20095A920 /* TDHistoryViewController.swift */; };
 		04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5307A1FB03F74003CAFD6 /* Common.swift */; };
 		04A976F51FAFF99D0060212D /* TabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A976F41FAFF99D0060212D /* TabBarConfig.plist */; };
 		04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */; };
@@ -61,6 +65,7 @@
 		040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04109B591FB1E62100FE0913 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extenstion.swift"; sourceTree = "<group>"; };
+		045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentScribeNavView.swift; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931361FAB435600E4F86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0459313D1FAB435600E4F86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +79,9 @@
 		045931581FAB435600E4F86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047BD1721FB2E98C001C38F2 /* TDProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDProfileHeaderView.swift; sourceTree = "<group>"; };
 		047BD1781FB30A04001C38F2 /* TDSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSettingViewController.swift; sourceTree = "<group>"; };
+		048629941FB727840095A920 /* TDInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDInterestViewController.swift; sourceTree = "<group>"; };
+		048629961FB727A00095A920 /* TDSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSubscriptionViewController.swift; sourceTree = "<group>"; };
+		048629981FB727B20095A920 /* TDHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDHistoryViewController.swift; sourceTree = "<group>"; };
 		04A5307A1FB03F74003CAFD6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		04A976F41FAFF99D0060212D /* TabBarConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarConfig.plist; sourceTree = "<group>"; };
 		04AB16E11FAFFDC60004E329 /* TDBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -283,6 +291,9 @@
 			isa = PBXGroup;
 			children = (
 				044E8DC91FAFFBA7003A4761 /* Host */,
+				048629901FB7273D0095A920 /* Interest */,
+				048629881FB7273D0095A920 /* Subscription */,
+				0486298C1FB7273D0095A920 /* History */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -315,6 +326,7 @@
 		044E8DCC1FAFFBA7003A4761 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -600,6 +612,102 @@
 			sourceTree = "<group>";
 		};
 		047BD1771FB309B8001C38F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		048629881FB7273D0095A920 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				048629891FB7273D0095A920 /* Controller */,
+				0486298A1FB7273D0095A920 /* Model */,
+				0486298B1FB7273D0095A920 /* Views */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		048629891FB7273D0095A920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048629961FB727A00095A920 /* TDSubscriptionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0486298A1FB7273D0095A920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0486298B1FB7273D0095A920 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0486298C1FB7273D0095A920 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0486298D1FB7273D0095A920 /* Controller */,
+				0486298E1FB7273D0095A920 /* Model */,
+				0486298F1FB7273D0095A920 /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		0486298D1FB7273D0095A920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048629981FB727B20095A920 /* TDHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0486298E1FB7273D0095A920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0486298F1FB7273D0095A920 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		048629901FB7273D0095A920 /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				048629911FB7273D0095A920 /* Controller */,
+				048629921FB7273D0095A920 /* Model */,
+				048629931FB7273D0095A920 /* Views */,
+			);
+			path = Interest;
+			sourceTree = "<group>";
+		};
+		048629911FB7273D0095A920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048629941FB727840095A920 /* TDInterestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		048629921FB7273D0095A920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048629931FB7273D0095A920 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1014,14 +1122,18 @@
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */,
+				048629971FB727A00095A920 /* TDSubscriptionViewController.swift in Sources */,
 				04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
 				04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
+				048629951FB727840095A920 /* TDInterestViewController.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
+				045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
 				04BD1DBA1FB5514600905BD9 /* TDHomeSubTitleView.swift in Sources */,
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
+				048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04BD1DBD1FB5815600905BD9 /* TDPageViewController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
