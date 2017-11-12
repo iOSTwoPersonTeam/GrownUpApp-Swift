@@ -10,6 +10,9 @@
 		040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */; };
 		04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B591FB1E62100FE0913 /* UIView+Extension.swift */; };
 		04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */; };
+		042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */; };
+		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
+		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
 		045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
 		0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459313D1FAB435600E4F86E /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04109B591FB1E62100FE0913 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extenstion.swift"; sourceTree = "<group>"; };
+		042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAlbumViewController.swift; sourceTree = "<group>"; };
+		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
+		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
 		045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentScribeNavView.swift; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931361FAB435600E4F86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,102 @@
 				04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		042AC3E31FB7F3DC00FCDF58 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3E41FB7F3DC00FCDF58 /* Controller */,
+				042AC3E51FB7F3DC00FCDF58 /* Model */,
+				042AC3E61FB7F3DC00FCDF58 /* views */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		042AC3E41FB7F3DC00FCDF58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		042AC3E51FB7F3DC00FCDF58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042AC3E61FB7F3DC00FCDF58 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		042AC3E71FB7F3DC00FCDF58 /* DownLoading */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3E81FB7F3DC00FCDF58 /* Controller */,
+				042AC3E91FB7F3DC00FCDF58 /* Model */,
+				042AC3EA1FB7F3DC00FCDF58 /* views */,
+			);
+			path = DownLoading;
+			sourceTree = "<group>";
+		};
+		042AC3E81FB7F3DC00FCDF58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		042AC3E91FB7F3DC00FCDF58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042AC3EA1FB7F3DC00FCDF58 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		042AC3EB1FB7F3DC00FCDF58 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3EC1FB7F3DC00FCDF58 /* Controller */,
+				042AC3ED1FB7F3DC00FCDF58 /* Model */,
+				042AC3EE1FB7F3DC00FCDF58 /* views */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		042AC3EC1FB7F3DC00FCDF58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		042AC3ED1FB7F3DC00FCDF58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042AC3EE1FB7F3DC00FCDF58 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		044BF8201FAFF35800B20A30 /* Classes */ = {
@@ -251,6 +353,9 @@
 			isa = PBXGroup;
 			children = (
 				044E8DC41FAFFBA7003A4761 /* Host */,
+				042AC3E31FB7F3DC00FCDF58 /* Album */,
+				042AC3EB1FB7F3DC00FCDF58 /* Voice */,
+				042AC3E71FB7F3DC00FCDF58 /* DownLoading */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -1128,6 +1233,7 @@
 				04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				048629951FB727840095A920 /* TDInterestViewController.swift in Sources */,
+				042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
 				045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
@@ -1141,9 +1247,11 @@
 				04AB16F31FB000810004E329 /* TDProfileTableViewController.swift in Sources */,
 				045931371FAB435600E4F86E /* AppDelegate.swift in Sources */,
 				04BD1DD11FB5A0E200905BD9 /* TDRadioViewController.swift in Sources */,
+				042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */,
 				047BD1791FB30A04001C38F2 /* TDSettingViewController.swift in Sources */,
 				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
+				042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
