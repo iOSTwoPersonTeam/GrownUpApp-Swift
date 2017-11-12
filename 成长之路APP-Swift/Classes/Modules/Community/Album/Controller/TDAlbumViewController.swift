@@ -13,6 +13,7 @@ class TDAlbumViewController: TDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = UIColor.purple
     }
 
 

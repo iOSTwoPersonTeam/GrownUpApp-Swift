@@ -40,9 +40,9 @@ class TDContentViewController: TDBaseViewController {
             cons.append(TDSubscriptionViewController())
             cons.append(TDHistoryViewController())
         case .TDContentSubScribetyleDownload:
-            cons.append(TDInterestViewController())
-            cons.append(TDSubscriptionViewController())
-            cons.append(TDHistoryViewController())
+            cons.append(TDAlbumViewController())
+            cons.append(TDVoiceViewController())
+            cons.append(TDDownLoadingViewController())
         }
         return cons
     }()
