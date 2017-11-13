@@ -19,7 +19,7 @@ class TDContentScribeNavView: UIView {
     var subScribeNavViewDidSubClick: ((_ view: TDContentScribeNavView, _ index: NSInteger) -> ())?
     
     // MARK: --定义属性
-    /// 标题数组
+    /// 标题数组  set方法调用
     var titles: [String] = [String](){
         didSet{
             // 配置子视图
@@ -40,7 +40,7 @@ class TDContentScribeNavView: UIView {
 
 }
 
-// MARK: -创建方法
+// MARK: -创建方法  初始化创建方法
 extension TDContentScribeNavView {
    class func createWith(titles: [String]) -> TDContentScribeNavView {
         let view = TDContentScribeNavView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 44))

@@ -32,6 +32,7 @@ class TDBaseViewController: UIViewController {
         super.viewWillAppear(animated)
 
         navigationController?.navigationBar.isTranslucent = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     //MARK: - Event Response  点击事件
