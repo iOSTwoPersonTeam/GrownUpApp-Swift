@@ -14,6 +14,7 @@
 		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
 		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
 		045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */; };
+		045264BE1FB981A3000A4060 /* TDRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
 		0459313E1FAB435600E4F86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0459313D1FAB435600E4F86E /* Assets.xcassets */; };
 		045931411FAB435600E4F86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459313F1FAB435600E4F86E /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
 		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
 		045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentScribeNavView.swift; sourceTree = "<group>"; };
+		045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendHeaderView.swift; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045931361FAB435600E4F86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0459313D1FAB435600E4F86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -643,6 +645,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		045264BA1FB97C35000A4060 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
 		0459312A1FAB435600E4F86E = {
 			isa = PBXGroup;
 			children = (
@@ -879,6 +889,7 @@
 		04BD1DB41FB5372F00905BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				045264BA1FB97C35000A4060 /* HeaderView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1233,6 +1244,7 @@
 				04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				048629951FB727840095A920 /* TDInterestViewController.swift in Sources */,
+				045264BE1FB981A3000A4060 /* TDRecommendHeaderView.swift in Sources */,
 				042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
 				045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */,
