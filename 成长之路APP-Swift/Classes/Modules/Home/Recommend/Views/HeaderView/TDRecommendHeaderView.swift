@@ -15,8 +15,8 @@ class TDRecommendHeaderView: UIView {
     /// 上方广告轮播图视图
     lazy var adverScrollView: SDCycleScrollView = {
         let adverView = SDCycleScrollView()
-        adverView.delegate = self
         adverView.placeholderImage = UIImage.init(named: "find_usercover")
+        adverView.delegate = self
         adverView.backgroundColor = UIColor.purple
         self.addSubview(adverView)
         return adverView
@@ -42,23 +42,22 @@ class TDRecommendHeaderView: UIView {
         }
     }
     
+    // MARK:  添加布局frame
     override func updateConstraints() {
         super.updateConstraints()
-        
         self.adverScrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 160)
         self.cateScorllView.frame  = CGRect.init(x: 0, y: 165, width: SCREENWITH, height: 80)
     }
     
 }
 
+// MARK:  --代理方法实现
 extension TDRecommendHeaderView: SDCycleScrollViewDelegate {
     
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
         
     }
-    
 }
-
 
 
 
