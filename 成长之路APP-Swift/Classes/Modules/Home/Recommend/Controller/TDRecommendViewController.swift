@@ -9,20 +9,20 @@
 import UIKit
 
 // MARK: --各个section
-let tdHomeSectionEditCommen  = 0   // 小编推荐
-let tdHomeSectionLive        = 1   // 现场直播
-let tdHomeSectinGuess        = 2   // 猜你喜欢
-let tdHomeSectionCityColumn  = 3   // 城市歌曲
-let tdHomeSectionSpecial     = 4   // 精品单听
-let tdHomeSectionAdvertise   = 5   // 推广
-let tdHomeSectionHotCommends = 6   // 热门推荐
-let tdHomeSectionMore        = 7   // 更多分类
+let tdRecommendSectionEditCommen  = 0   // 小编推荐
+let tdRecommendSectionLive        = 1   // 现场直播
+let tdRecommendSectinGuess        = 2   // 猜你喜欢
+let tdRecommendSectionCityColumn  = 3   // 城市歌曲
+let tdRecommendSectionSpecial     = 4   // 精品单听
+let tdRecommendSectionAdvertise   = 5   // 推广
+let tdRecommendSectionHotCommends = 6   // 热门推荐
+let tdRecommendSectionMore        = 7   // 更多分类
 
 // MARK: --tableView的cellID
-let tdHomeSectionEditCommenID    = "tdHomeSectionEditCommenID"
-let tdHomeSectionLiveID          = "tdHomeSectionLiveID"
-let tdHomeSectinGuessID          = "tdHomeSectinGuessID"
-let tdHomeSectionCityColumnID    = "tdHomeSectionCityColumnID"
+let tdRecommendSectionEditCommenID    = "tdHomeSectionEditCommenID"
+let tdRecommendSectionLiveID          = "tdHomeSectionLiveID"
+let tdRecommendSectinGuessID          = "tdHomeSectinGuessID"
+let tdRecommendSectionCityColumnID    = "tdHomeSectionCityColumnID"
 
 
 class TDRecommendViewController: TDBaseViewController {
@@ -79,26 +79,26 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            var cell = tableView.dequeueReusableCell(withIdentifier: tdHomeSectionEditCommenID)
-            if cell == nil {
-                cell = UITableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdHomeSectionEditCommenID)
+            var commenCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionEditCommenID)
+            if commenCell == nil {
+                commenCell = TDRecCellStyleCommonTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectionEditCommenID)
             }
-            cell?.backgroundColor = UIColor.yellow
-            return cell!
+            commenCell?.backgroundColor = UIColor.yellow
+            return commenCell!
         case 1:
-            var cell = tableView.dequeueReusableCell(withIdentifier: tdHomeSectionLiveID)
-            if cell == nil {
-                cell = UITableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdHomeSectionLiveID)
+            var liveCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionLiveID)
+            if liveCell == nil {
+                liveCell = TDRecCellStyleLiveTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectionLiveID)
             }
-            cell?.backgroundColor = UIColor.purple
-            return cell!
+            liveCell?.backgroundColor = UIColor.purple
+            return liveCell!
         case 2:
-            var cell = tableView.dequeueReusableCell(withIdentifier: tdHomeSectinGuessID)
-            if cell == nil {
-                cell = UITableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdHomeSectinGuessID)
+            var specialCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectinGuessID)
+            if specialCell == nil {
+                specialCell = TDRecCellStyleSpecialTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectinGuessID)
             }
-            cell?.backgroundColor = UIColor.orange
-            return cell!
+            specialCell?.backgroundColor = UIColor.orange
+            return specialCell!
         default:     // 其它
             return UITableViewCell()
         }

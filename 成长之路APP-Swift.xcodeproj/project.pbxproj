@@ -10,6 +10,11 @@
 		040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */; };
 		04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B591FB1E62100FE0913 /* UIView+Extension.swift */; };
 		04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */; };
+		04132B101FB99D29003C9F8C /* TDRecCellStyleCommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B0F1FB99D29003C9F8C /* TDRecCellStyleCommonTableViewCell.swift */; };
+		04132B121FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B111FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift */; };
+		04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B131FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift */; };
+		04132B161FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */; };
+		04132B1A1FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */; };
 		042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */; };
 		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
 		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
@@ -69,6 +74,11 @@
 		040F688D1FB1B8BD00C89C66 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04109B591FB1E62100FE0913 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extenstion.swift"; sourceTree = "<group>"; };
+		04132B0F1FB99D29003C9F8C /* TDRecCellStyleCommonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleCommonTableViewCell.swift; sourceTree = "<group>"; };
+		04132B111FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleLiveTableViewCell.swift; sourceTree = "<group>"; };
+		04132B131FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleMoreTableViewCell.swift; sourceTree = "<group>"; };
+		04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleSpecialTableViewCell.swift; sourceTree = "<group>"; };
+		04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecHeaderCategotyIconView.swift; sourceTree = "<group>"; };
 		042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAlbumViewController.swift; sourceTree = "<group>"; };
 		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
 		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +157,38 @@
 				04109B5B1FB1EC6F00FE0913 /* NSString+Extenstion.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		04132B0B1FB99D00003C9F8C /* RecCellStyleMore */ = {
+			isa = PBXGroup;
+			children = (
+				04132B131FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift */,
+			);
+			path = RecCellStyleMore;
+			sourceTree = "<group>";
+		};
+		04132B0C1FB99D00003C9F8C /* RecCellStyleCommon */ = {
+			isa = PBXGroup;
+			children = (
+				04132B0F1FB99D29003C9F8C /* TDRecCellStyleCommonTableViewCell.swift */,
+			);
+			path = RecCellStyleCommon;
+			sourceTree = "<group>";
+		};
+		04132B0D1FB99D00003C9F8C /* RecCellStyleLive */ = {
+			isa = PBXGroup;
+			children = (
+				04132B111FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift */,
+			);
+			path = RecCellStyleLive;
+			sourceTree = "<group>";
+		};
+		04132B0E1FB99D00003C9F8C /* RecCellStyleSpecial */ = {
+			isa = PBXGroup;
+			children = (
+				04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */,
+			);
+			path = RecCellStyleSpecial;
 			sourceTree = "<group>";
 		};
 		042AC3E31FB7F3DC00FCDF58 /* Album */ = {
@@ -649,6 +691,7 @@
 			isa = PBXGroup;
 			children = (
 				045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */,
+				04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -890,6 +933,10 @@
 			isa = PBXGroup;
 			children = (
 				045264BA1FB97C35000A4060 /* HeaderView */,
+				04132B0C1FB99D00003C9F8C /* RecCellStyleCommon */,
+				04132B0D1FB99D00003C9F8C /* RecCellStyleLive */,
+				04132B0B1FB99D00003C9F8C /* RecCellStyleMore */,
+				04132B0E1FB99D00003C9F8C /* RecCellStyleSpecial */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1232,12 +1279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04132B1A1FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift in Sources */,
 				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
 				04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */,
 				04BD1DB81FB5487F00905BD9 /* TDSubHomeFactory.swift in Sources */,
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */,
+				04132B121FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift in Sources */,
 				048629971FB727A00095A920 /* TDSubscriptionViewController.swift in Sources */,
 				04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
@@ -1252,6 +1301,8 @@
 				04BD1DBA1FB5514600905BD9 /* TDHomeSubTitleView.swift in Sources */,
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
 				048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */,
+				04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */,
+				04132B161FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04BD1DBD1FB5815600905BD9 /* TDPageViewController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,
@@ -1264,6 +1315,7 @@
 				04AB16F11FB000390004E329 /* TDCommunityViewController.swift in Sources */,
 				04AB16EB1FAFFEFC0004E329 /* TDBaseNavigationViewController.swift in Sources */,
 				042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */,
+				04132B101FB99D29003C9F8C /* TDRecCellStyleCommonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
