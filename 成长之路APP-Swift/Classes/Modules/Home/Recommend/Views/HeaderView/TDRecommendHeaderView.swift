@@ -33,10 +33,10 @@ class TDRecommendHeaderView: UIView {
     /// 上方轮播图数组Model
     var adverImagePics: [String]! {
         didSet{
-            
-        self.adverScrollView.imageURLStringsGroup = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
+
+        self.adverScrollView.imageURLStringsGroup = adverImagePics
         self.cateScorllView.backgroundColor  = UIColor.red
-            
+
             self.updateConstraintsIfNeeded()
             self.setNeedsUpdateConstraints()
         }
@@ -47,7 +47,6 @@ class TDRecommendHeaderView: UIView {
         
         self.adverScrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 160)
         self.cateScorllView.frame  = CGRect.init(x: 0, y: 165, width: SCREENWITH, height: 80)
-    
     }
     
 }

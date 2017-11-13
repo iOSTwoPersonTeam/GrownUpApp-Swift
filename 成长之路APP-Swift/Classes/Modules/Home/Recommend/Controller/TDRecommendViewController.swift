@@ -56,9 +56,16 @@ class TDRecommendViewController: TDBaseViewController {
 
         self.tableView.backgroundColor = UIColor.white
         
-        self.headerView.adverImagePics = ["123"]
+
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.headerView.adverImagePics = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
+        self.tableView.reloadData()
+    }
+    
 }
 
 // MARK:  --TableView UITableViewDelegate & UITableViewDataSource代理方法和数据源方法
