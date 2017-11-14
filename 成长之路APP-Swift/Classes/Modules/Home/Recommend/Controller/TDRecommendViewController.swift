@@ -65,7 +65,6 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
 
         self.tableView.backgroundColor = UIColor.white
         
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
