@@ -12,7 +12,10 @@ import SDCycleScrollView
 class TDRecommendHeaderView: UIView {
 
     // MARK:  ---懒加载属性
-    /// 上方广告轮播图视图
+    /*
+       上方广告轮播图视图
+     注意: 这里网络请求图片无法正常显示的原因是因为没有添加HTTPS的安全传输协议***
+     */
     lazy var adverScrollView: SDCycleScrollView = {
         let adverView = SDCycleScrollView()
         adverView.placeholderImage = UIImage.init(named: "find_usercover")
@@ -21,10 +24,25 @@ class TDRecommendHeaderView: UIView {
         return adverView
     }()
 
-    /// 上方轮播图数组Model
+    /// 下方分类轮播图视图
+    lazy var categoryCollectionView: TDRecHeaderCategotyIconView = {
+        let layout = UICollectionViewFlowLayout.init()
+        layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        layout.itemSize = CGSize.init(width: 60, height: 90)
+        let cateCollectionView = TDRecHeaderCategotyIconView.init(frame: CGRect.init(x: 0, y: 160, width: SCREENWITH, height: 90), collectionViewLayout: layout)
+        cateCollectionView.backgroundColor = UIColor.white
+        self.addSubview(cateCollectionView)
+        return cateCollectionView
+    }()
+    
+    
+    /// 上方轮播图数组
     var adverImagePics: [String]! {
         didSet{
         self.adverScrollView.imageURLStringsGroup = adverImagePics
+        self.categoryCollectionView
+            .backgroundColor = UIColor.white
+        
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
         }
@@ -33,7 +51,8 @@ class TDRecommendHeaderView: UIView {
     // MARK:  添加布局frame
     override func updateConstraints() {
         super.updateConstraints()
-        self.adverScrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 160)
+        self.adverScrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: SCREENHEIGHT/5)
+        self.categoryCollectionView.frame = CGRect.init(x: 0, y: Int(SCREENHEIGHT/5), width: Int(SCREENWITH), height: 90)
     }
     
 }

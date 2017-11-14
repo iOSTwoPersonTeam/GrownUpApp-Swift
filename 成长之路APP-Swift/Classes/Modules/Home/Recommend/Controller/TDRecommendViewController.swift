@@ -29,7 +29,7 @@ class TDRecommendViewController: TDBaseViewController {
 
     // MARK:  --懒加载属性
     // 头部视图
-    let headerFrame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 250)
+    let headerFrame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: SCREENHEIGHT/5 + 90)
     lazy var headerView: TDRecommendHeaderView  = {
         let recHeaderView = TDRecommendHeaderView.init(frame: headerFrame)
         recHeaderView.backgroundColor = UIColor.orange
