@@ -16,29 +16,17 @@ class TDRecommendHeaderView: UIView {
     lazy var adverScrollView: SDCycleScrollView = {
         let adverView = SDCycleScrollView()
         adverView.placeholderImage = UIImage.init(named: "find_usercover")
-        adverView.delegate = self
         adverView.backgroundColor = UIColor.purple
         self.addSubview(adverView)
         return adverView
     }()
-    
-    /// 下方分类轮播图视图
-    lazy var cateScorllView: UIView = {
-        let cateView = UIView()
-        self.addSubview(cateView)
-        return cateView
-    }()
-    
-    
+
     /// 上方轮播图数组Model
     var adverImagePics: [String]! {
         didSet{
-
         self.adverScrollView.imageURLStringsGroup = adverImagePics
-        self.cateScorllView.backgroundColor  = UIColor.red
-
-            self.updateConstraintsIfNeeded()
-            self.setNeedsUpdateConstraints()
+        self.updateConstraintsIfNeeded()
+        self.setNeedsUpdateConstraints()
         }
     }
     
@@ -46,17 +34,8 @@ class TDRecommendHeaderView: UIView {
     override func updateConstraints() {
         super.updateConstraints()
         self.adverScrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 160)
-        self.cateScorllView.frame  = CGRect.init(x: 0, y: 165, width: SCREENWITH, height: 80)
     }
     
-}
-
-// MARK:  --代理方法实现
-extension TDRecommendHeaderView: SDCycleScrollViewDelegate {
-    
-    func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
-        
-    }
 }
 
 
