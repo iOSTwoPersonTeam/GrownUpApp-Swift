@@ -79,7 +79,7 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     
     // MARK: --各section的row的值
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 1
     }
     
     // MARK: --cell
@@ -113,7 +113,7 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100;
+        return 200;
     }
     
     
