@@ -50,6 +50,7 @@
 		04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DD21FB5A14C00905BD9 /* TDRankViewController.swift */; };
 		04BD1DD51FB5A16B00905BD9 /* TDAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1DD41FB5A16B00905BD9 /* TDAnchorViewController.swift */; };
 		04CFB3941FBABD9300E4627B /* TDSubRecCommonCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB3931FBABD9300E4627B /* TDSubRecCommonCollectionView.swift */; };
+		04CFB3961FBAE65A00E4627B /* TDSubRecSpecialTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB3951FBAE65A00E4627B /* TDSubRecSpecialTableView.swift */; };
 		0EA2F8956B7A7E1D48EB9502 /* Pods_____APP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		04BD1DD21FB5A14C00905BD9 /* TDRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRankViewController.swift; sourceTree = "<group>"; };
 		04BD1DD41FB5A16B00905BD9 /* TDAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAnchorViewController.swift; sourceTree = "<group>"; };
 		04CFB3931FBABD9300E4627B /* TDSubRecCommonCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSubRecCommonCollectionView.swift; sourceTree = "<group>"; };
+		04CFB3951FBAE65A00E4627B /* TDSubRecSpecialTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSubRecSpecialTableView.swift; sourceTree = "<group>"; };
 		BD92061B5E5C97D380DB1DA9 /* Pods-成长之路APP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-成长之路APP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-成长之路APP-Swift/Pods-成长之路APP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E905FA06EF1BD0AF6830D916 /* Pods_____APP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____APP_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */,
+				04CFB3951FBAE65A00E4627B /* TDSubRecSpecialTableView.swift */,
 			);
 			path = RecCellStyleSpecial;
 			sourceTree = "<group>";
@@ -938,8 +941,8 @@
 				045264BA1FB97C35000A4060 /* HeaderView */,
 				04132B0C1FB99D00003C9F8C /* RecCellStyleCommon */,
 				04132B0D1FB99D00003C9F8C /* RecCellStyleLive */,
-				04132B0B1FB99D00003C9F8C /* RecCellStyleMore */,
 				04132B0E1FB99D00003C9F8C /* RecCellStyleSpecial */,
+				04132B0B1FB99D00003C9F8C /* RecCellStyleMore */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1289,6 +1292,7 @@
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
 				04BD1DB61FB5377C00905BD9 /* TDRecommendViewController.swift in Sources */,
+				04CFB3961FBAE65A00E4627B /* TDSubRecSpecialTableView.swift in Sources */,
 				04132B121FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift in Sources */,
 				048629971FB727A00095A920 /* TDSubscriptionViewController.swift in Sources */,
 				04CFB3941FBABD9300E4627B /* TDSubRecCommonCollectionView.swift in Sources */,

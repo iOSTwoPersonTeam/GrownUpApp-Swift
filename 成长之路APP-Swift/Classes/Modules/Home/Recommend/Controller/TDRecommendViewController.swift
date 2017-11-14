@@ -46,6 +46,15 @@ class TDRecommendViewController: TDBaseViewController {
         tableV.tableHeaderView  = UIView.init(frame: headerFrame)
         tableV.tableHeaderView?.addSubview(self.headerView)
         self.view.addSubview(tableV)
+  
+        // MARK: 这里必须采取注册cell的形式才能实现
+         // section == 0
+tableV.register(TDRecCellStyleCommonTableViewCell.classForCoder(), forCellReuseIdentifier: tdRecommendSectionEditCommenID)
+        // section == 1
+tableV.register(TDRecCellStyleLiveTableViewCell.classForCoder(), forCellReuseIdentifier: tdRecommendSectionLiveID)
+        // section == 2
+tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuseIdentifier: tdRecommendSectinGuessID)
+        
         return tableV
     }()
     
@@ -86,26 +95,19 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            var commenCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionEditCommenID)
-            if commenCell == nil {
-                commenCell = TDRecCellStyleCommonTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectionEditCommenID)
-            }
-            commenCell?.backgroundColor = UIColor.yellow
-            return commenCell!
+            let commenCell: TDRecCellStyleCommonTableViewCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionEditCommenID, for: indexPath) as! TDRecCellStyleCommonTableViewCell
+            commenCell.backgroundColor = UIColor.yellow
+            commenCell.getDateWithModel(model: "123")
+            return commenCell
         case 1:
-            var liveCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionLiveID)
-            if liveCell == nil {
-                liveCell = TDRecCellStyleLiveTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectionLiveID)
-            }
-            liveCell?.backgroundColor = UIColor.purple
-            return liveCell!
+            let liveCell: TDRecCellStyleLiveTableViewCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionLiveID, for: indexPath) as! TDRecCellStyleLiveTableViewCell
+            liveCell.backgroundColor = UIColor.purple
+            liveCell.getDateWithModel(model: "123")
+            return liveCell
         case 2:
-            var specialCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectinGuessID)
-            if specialCell == nil {
-                specialCell = TDRecCellStyleSpecialTableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: tdRecommendSectinGuessID)
-            }
-            specialCell?.backgroundColor = UIColor.orange
-            return specialCell!
+            let specialCell: TDRecCellStyleSpecialTableViewCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectinGuessID, for: indexPath) as! TDRecCellStyleSpecialTableViewCell
+            specialCell.backgroundColor = UIColor.orange
+            return specialCell
         default:     // 其它
             return UITableViewCell()
         }
@@ -113,6 +115,9 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 2 {
+            return 240
+        }
         return 200;
     }
     

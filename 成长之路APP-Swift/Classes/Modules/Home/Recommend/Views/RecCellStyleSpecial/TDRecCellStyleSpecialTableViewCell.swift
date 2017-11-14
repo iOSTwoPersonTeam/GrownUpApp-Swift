@@ -10,15 +10,29 @@ import UIKit
 
 class TDRecCellStyleSpecialTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    lazy var specialTableView: TDSubRecSpecialTableView = {
+        let tempTableView = TDSubRecSpecialTableView.init(frame: CGRect.init(x: 0, y: 40, width: SCREENWITH, height: 200), style: UITableViewStyle.plain)
+        addSubview(tempTableView)
+        return tempTableView
+    }()
+    
+    func getDateWithModel(model: String) {
+        
+        
+        self.updateConstraintsIfNeeded()
+        self.setNeedsUpdateConstraints()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func updateConstraints() {
+        super.updateConstraints()
+        self.specialTableView.snp.makeConstraints { (make) in
+            make.left.equalTo(0)
+            make.top.equalTo(40)
+            make.width.equalTo(self.snp.width)
+            make.height.equalTo(200)
+        }
+        
     }
-
+    
+  
 }
