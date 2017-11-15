@@ -21,6 +21,10 @@
 		042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */; };
 		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
 		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
+		04406F4D1FBC1FA000EED0D1 /* GeneralRecommenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F4C1FBC1FA000EED0D1 /* GeneralRecommenModel.swift */; };
+		04406F4F1FBC224C00EED0D1 /* EditorRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F4E1FBC224C00EED0D1 /* EditorRecommendModel.swift */; };
+		04406F511FBC26D100EED0D1 /* LiveRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F501FBC26D100EED0D1 /* LiveRecommendModel.swift */; };
+		04406F531FBC28F600EED0D1 /* CategoryRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */; };
 		045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */; };
 		045264BE1FB981A3000A4060 /* TDRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
@@ -90,6 +94,10 @@
 		042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAlbumViewController.swift; sourceTree = "<group>"; };
 		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
 		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
+		04406F4C1FBC1FA000EED0D1 /* GeneralRecommenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRecommenModel.swift; sourceTree = "<group>"; };
+		04406F4E1FBC224C00EED0D1 /* EditorRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRecommendModel.swift; sourceTree = "<group>"; };
+		04406F501FBC26D100EED0D1 /* LiveRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRecommendModel.swift; sourceTree = "<group>"; };
+		04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRecommendModel.swift; sourceTree = "<group>"; };
 		045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentScribeNavView.swift; sourceTree = "<group>"; };
 		045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendHeaderView.swift; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +337,38 @@
 			children = (
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		04406F481FBC1F2F00EED0D1 /* GeneralModel */ = {
+			isa = PBXGroup;
+			children = (
+				04406F4C1FBC1FA000EED0D1 /* GeneralRecommenModel.swift */,
+			);
+			path = GeneralModel;
+			sourceTree = "<group>";
+		};
+		04406F491FBC1F2F00EED0D1 /* LiveRecommendModel */ = {
+			isa = PBXGroup;
+			children = (
+				04406F501FBC26D100EED0D1 /* LiveRecommendModel.swift */,
+			);
+			path = LiveRecommendModel;
+			sourceTree = "<group>";
+		};
+		04406F4A1FBC1F3000EED0D1 /* EditorRecommendModel */ = {
+			isa = PBXGroup;
+			children = (
+				04406F4E1FBC224C00EED0D1 /* EditorRecommendModel.swift */,
+			);
+			path = EditorRecommendModel;
+			sourceTree = "<group>";
+		};
+		04406F4B1FBC1F3000EED0D1 /* HorAndGuessModel */ = {
+			isa = PBXGroup;
+			children = (
+				04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */,
+			);
+			path = HorAndGuessModel;
 			sourceTree = "<group>";
 		};
 		044BF8201FAFF35800B20A30 /* Classes */ = {
@@ -972,6 +1012,10 @@
 		04BD1DB31FB5372F00905BD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04406F481FBC1F2F00EED0D1 /* GeneralModel */,
+				04406F4A1FBC1F3000EED0D1 /* EditorRecommendModel */,
+				04406F4B1FBC1F3000EED0D1 /* HorAndGuessModel */,
+				04406F491FBC1F2F00EED0D1 /* LiveRecommendModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1340,11 +1384,14 @@
 				041DC8531FBBE77F00F31540 /* TDBaseRequestApI.swift in Sources */,
 				04CFB3941FBABD9300E4627B /* TDSubRecCommonCollectionView.swift in Sources */,
 				04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */,
+				04406F511FBC26D100EED0D1 /* LiveRecommendModel.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
 				04BD1DD31FB5A14C00905BD9 /* TDRankViewController.swift in Sources */,
 				04109B5C1FB1EC6F00FE0913 /* NSString+Extenstion.swift in Sources */,
 				048629951FB727840095A920 /* TDInterestViewController.swift in Sources */,
 				045264BE1FB981A3000A4060 /* TDRecommendHeaderView.swift in Sources */,
+				04406F4F1FBC224C00EED0D1 /* EditorRecommendModel.swift in Sources */,
+				04406F4D1FBC1FA000EED0D1 /* GeneralRecommenModel.swift in Sources */,
 				042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */,
 				040F688E1FB1B8BD00C89C66 /* UIColor+Extension.swift in Sources */,
 				045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */,
@@ -1355,6 +1402,7 @@
 				048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */,
 				04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */,
 				04132B161FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift in Sources */,
+				04406F531FBC28F600EED0D1 /* CategoryRecommendModel.swift in Sources */,
 				04AB16E21FAFFDC60004E329 /* TDBaseTabBarController.swift in Sources */,
 				04BD1DBD1FB5815600905BD9 /* TDPageViewController.swift in Sources */,
 				04AB16ED1FAFFFF00004E329 /* TDHomeViewController.swift in Sources */,

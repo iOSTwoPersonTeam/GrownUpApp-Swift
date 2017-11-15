@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ObjectMapper  // 字典Model转换类库
+import SwiftyJSON
 
 // MARK: --各个section
 let tdRecommendSectionEditCommen  = 0   // 小编推荐
@@ -64,6 +66,7 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
         view.backgroundColor = UIColor.orange
 
         self.tableView.backgroundColor = UIColor.white
+ 
         
     }
 
@@ -73,6 +76,7 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
         self.tableView.reloadData()
         self.headerView.adverImagePics = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
     }
+
     
 }
 

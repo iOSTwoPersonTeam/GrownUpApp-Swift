@@ -24,7 +24,7 @@ fileprivate let kLiveRecommendAPI = "http://live.ximalaya.com/live-activity-web/
 class TDRecommendRequest: NSObject {
 
     /// 小编推荐 --- 轮播图 -- 精品听单 三部分数据
-    func getRequestRecommends(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
+   class func getRequestRecommends(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
     
     TDBaseRequestApI.shareInstance.requestData(methodType: .GET, urlString: kRecommendAPI, parameters: nil) { (result, error) in
             finished(result, error)
@@ -32,14 +32,14 @@ class TDRecommendRequest: NSObject {
     }
     
     /// 分类 -猜你喜欢 -听北京--热门推荐
-    func getRequestHotAndGuess(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
+   class func getRequestHotAndGuess(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
         TDBaseRequestApI.shareInstance.requestData(methodType: .GET, urlString: kHotAndGuessAPI, parameters: nil) { (result, error) in
             finished(result, error)
         }
     }
     
     /// 现场直播
-    func getRequestLiveRecommend(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()){
+   class func getRequestLiveRecommend(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()){
     
     TDBaseRequestApI.shareInstance.requestData(methodType: .GET, urlString: kLiveRecommendAPI, parameters: nil) { (result, error) in
             finished(result, error)
