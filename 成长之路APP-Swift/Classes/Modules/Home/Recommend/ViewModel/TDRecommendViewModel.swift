@@ -10,4 +10,33 @@ import UIKit
 
 class TDRecommendViewModel: NSObject {
 
+    // MARK: --网络请求Model属性
+    /// 轮播图
+    
+    /// 分类
+    
+    /// 小编推荐
+    
+    /// 现场直播
+    
+    /// 猜你喜欢
+    
+    /// 热门推荐
+    
+    /// 精品单曲
+    
+    
+    
+
+    
+   
+    
+    
+    
+    
+    
 }
+
+
+
+

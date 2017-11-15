@@ -17,6 +17,7 @@
 		04132B1A1FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */; };
 		041DC8501FBBE47300F31540 /* TDRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC84F1FBBE47300F31540 /* TDRecommendViewModel.swift */; };
 		041DC8531FBBE77F00F31540 /* TDBaseRequestApI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */; };
+		041DC8571FBBF29900F31540 /* TDRecommendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8561FBBF29900F31540 /* TDRecommendRequest.swift */; };
 		042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */; };
 		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
 		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
@@ -85,6 +86,7 @@
 		04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecHeaderCategotyIconView.swift; sourceTree = "<group>"; };
 		041DC84F1FBBE47300F31540 /* TDRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendViewModel.swift; sourceTree = "<group>"; };
 		041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseRequestApI.swift; sourceTree = "<group>"; };
+		041DC8561FBBF29900F31540 /* TDRecommendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendRequest.swift; sourceTree = "<group>"; };
 		042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAlbumViewController.swift; sourceTree = "<group>"; };
 		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
 		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,22 @@
 				041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */,
 			);
 			path = BaseRequestApI;
+			sourceTree = "<group>";
+		};
+		041DC8541FBBF25B00F31540 /* TDHomeRequest */ = {
+			isa = PBXGroup;
+			children = (
+				041DC8551FBBF25B00F31540 /* TDRecommendRequest */,
+			);
+			path = TDHomeRequest;
+			sourceTree = "<group>";
+		};
+		041DC8551FBBF25B00F31540 /* TDRecommendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				041DC8561FBBF29900F31540 /* TDRecommendRequest.swift */,
+			);
+			path = TDRecommendRequest;
 			sourceTree = "<group>";
 		};
 		042AC3E31FB7F3DC00FCDF58 /* Album */ = {
@@ -359,6 +377,7 @@
 		044BF8241FAFF35800B20A30 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				041DC8541FBBF25B00F31540 /* TDHomeRequest */,
 			);
 			path = HTTPRequest;
 			sourceTree = "<group>";
@@ -1331,6 +1350,7 @@
 				045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */,
 				04AB16EF1FB000170004E329 /* TDContentViewController.swift in Sources */,
 				04BD1DBA1FB5514600905BD9 /* TDHomeSubTitleView.swift in Sources */,
+				041DC8571FBBF29900F31540 /* TDRecommendRequest.swift in Sources */,
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
 				048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */,
 				04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */,
