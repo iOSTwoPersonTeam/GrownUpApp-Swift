@@ -15,6 +15,8 @@
 		04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B131FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift */; };
 		04132B161FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */; };
 		04132B1A1FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */; };
+		041DC8501FBBE47300F31540 /* TDRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC84F1FBBE47300F31540 /* TDRecommendViewModel.swift */; };
+		041DC8531FBBE77F00F31540 /* TDBaseRequestApI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */; };
 		042AC3F01FB7F49900FCDF58 /* TDAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */; };
 		042AC3F21FB7F4B900FCDF58 /* TDVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */; };
 		042AC3F41FB7F4D000FCDF58 /* TDDownLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */; };
@@ -81,6 +83,8 @@
 		04132B131FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleMoreTableViewCell.swift; sourceTree = "<group>"; };
 		04132B151FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecCellStyleSpecialTableViewCell.swift; sourceTree = "<group>"; };
 		04132B191FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecHeaderCategotyIconView.swift; sourceTree = "<group>"; };
+		041DC84F1FBBE47300F31540 /* TDRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendViewModel.swift; sourceTree = "<group>"; };
+		041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseRequestApI.swift; sourceTree = "<group>"; };
 		042AC3EF1FB7F49900FCDF58 /* TDAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAlbumViewController.swift; sourceTree = "<group>"; };
 		042AC3F11FB7F4B900FCDF58 /* TDVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDVoiceViewController.swift; sourceTree = "<group>"; };
 		042AC3F31FB7F4D000FCDF58 /* TDDownLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDownLoadingViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +199,22 @@
 				04CFB3971FBAF28D00E4627B /* TDSubRecSpecialTableView.swift */,
 			);
 			path = RecCellStyleSpecial;
+			sourceTree = "<group>";
+		};
+		041DC84E1FBBE44500F31540 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				041DC84F1FBBE47300F31540 /* TDRecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041DC8511FBBE72E00F31540 /* BaseRequestApI */ = {
+			isa = PBXGroup;
+			children = (
+				041DC8521FBBE77F00F31540 /* TDBaseRequestApI.swift */,
+			);
+			path = BaseRequestApI;
 			sourceTree = "<group>";
 		};
 		042AC3E31FB7F3DC00FCDF58 /* Album */ = {
@@ -384,6 +404,7 @@
 		044BF8291FAFF35800B20A30 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				041DC8511FBBE72E00F31540 /* BaseRequestApI */,
 				040F688C1FB1B59200C89C66 /* Category */,
 			);
 			path = Utils;
@@ -914,6 +935,7 @@
 			isa = PBXGroup;
 			children = (
 				04BD1DB21FB5372F00905BD9 /* Controller */,
+				041DC84E1FBBE44500F31540 /* ViewModel */,
 				04BD1DB31FB5372F00905BD9 /* Model */,
 				04BD1DB41FB5372F00905BD9 /* Views */,
 			);
@@ -1288,6 +1310,7 @@
 				04132B1A1FB9A00B003C9F8C /* TDRecHeaderCategotyIconView.swift in Sources */,
 				04AB16E91FAFFEB30004E329 /* TDBaseTableViewController.swift in Sources */,
 				04109B5A1FB1E62100FE0913 /* UIView+Extension.swift in Sources */,
+				041DC8501FBBE47300F31540 /* TDRecommendViewModel.swift in Sources */,
 				04BD1DB81FB5487F00905BD9 /* TDSubHomeFactory.swift in Sources */,
 				047BD1731FB2E98C001C38F2 /* TDProfileHeaderView.swift in Sources */,
 				04AB16E71FAFFE930004E329 /* TDBaseViewController.swift in Sources */,
@@ -1295,6 +1318,7 @@
 				04132B121FB99D3A003C9F8C /* TDRecCellStyleLiveTableViewCell.swift in Sources */,
 				04CFB3981FBAF28D00E4627B /* TDSubRecSpecialTableView.swift in Sources */,
 				048629971FB727A00095A920 /* TDSubscriptionViewController.swift in Sources */,
+				041DC8531FBBE77F00F31540 /* TDBaseRequestApI.swift in Sources */,
 				04CFB3941FBABD9300E4627B /* TDSubRecCommonCollectionView.swift in Sources */,
 				04BD1DCF1FB5A0CC00905BD9 /* TDCategoryViewController.swift in Sources */,
 				04AB16F51FB00B310004E329 /* TDPublishViewController.swift in Sources */,
