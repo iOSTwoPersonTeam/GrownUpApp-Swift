@@ -9,6 +9,7 @@
 import UIKit
 import ObjectMapper  // 字典Model转换类库
 import SwiftyJSON
+import Alamofire
 
 // MARK: --各个section
 let tdRecommendSectionEditCommen  = 0   // 小编推荐
@@ -60,14 +61,18 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
         return tableV
     }()
     
-
+    /// 懒加载 ViewModel
+    lazy var viewModel: TDRecommendViewModel = {
+    
+        return TDRecommendViewModel()
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.orange
-
         self.tableView.backgroundColor = UIColor.white
- 
-        
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -75,6 +80,28 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
 
         self.tableView.reloadData()
         self.headerView.adverImagePics = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
+        
+        //---------------------------------------------
+    TDBaseRequestApI.shareInstance.requestData(methodType: .GET, urlString: "http://mobile.ximalaya.com/mobile/discovery/v4/recommends?channel=ios-b1&device=iPhone&includeActivity=true&includeSpecial=true&scale=2&version=5.4.21", parameters: nil) { (result, error) in
+
+        DLog(message: result!["editorRecommendAlbums"])
+
+        let repos = Mapper<EditorRecommendModel>().map(JSON: result!["editorRecommendAlbums"] as! [String : Any])
+        DLog(message: repos)
+        
+        }
+       //----------------------------------------------------
+
+        /// 加载数据
+        viewModel.updateBlock = {
+            
+            // 更新列表数据
+            self.tableView.reloadData()
+            DLog(message: self.viewModel.focusImgsPics)
+            
+        }
+        viewModel.refreshDataSource()
+
     }
 
     

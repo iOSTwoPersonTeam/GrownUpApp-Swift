@@ -25,6 +25,7 @@
 		04406F4F1FBC224C00EED0D1 /* EditorRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F4E1FBC224C00EED0D1 /* EditorRecommendModel.swift */; };
 		04406F511FBC26D100EED0D1 /* LiveRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F501FBC26D100EED0D1 /* LiveRecommendModel.swift */; };
 		04406F531FBC28F600EED0D1 /* CategoryRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */; };
+		04406F551FBC6EDD00EED0D1 /* HotAndGuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406F541FBC6EDD00EED0D1 /* HotAndGuessModel.swift */; };
 		045246CC1FB6EC0F00607D4C /* TDContentScribeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */; };
 		045264BE1FB981A3000A4060 /* TDRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */; };
 		045931371FAB435600E4F86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045931361FAB435600E4F86E /* AppDelegate.swift */; };
@@ -98,6 +99,7 @@
 		04406F4E1FBC224C00EED0D1 /* EditorRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRecommendModel.swift; sourceTree = "<group>"; };
 		04406F501FBC26D100EED0D1 /* LiveRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRecommendModel.swift; sourceTree = "<group>"; };
 		04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRecommendModel.swift; sourceTree = "<group>"; };
+		04406F541FBC6EDD00EED0D1 /* HotAndGuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotAndGuessModel.swift; sourceTree = "<group>"; };
 		045246CB1FB6EC0F00607D4C /* TDContentScribeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDContentScribeNavView.swift; sourceTree = "<group>"; };
 		045264BD1FB981A3000A4060 /* TDRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRecommendHeaderView.swift; sourceTree = "<group>"; };
 		045931331FAB435600E4F86E /* 成长之路APP-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "成长之路APP-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				04406F521FBC28F600EED0D1 /* CategoryRecommendModel.swift */,
+				04406F541FBC6EDD00EED0D1 /* HotAndGuessModel.swift */,
 			);
 			path = HorAndGuessModel;
 			sourceTree = "<group>";
@@ -1400,6 +1403,7 @@
 				041DC8571FBBF29900F31540 /* TDRecommendRequest.swift in Sources */,
 				04A5307B1FB03F74003CAFD6 /* Common.swift in Sources */,
 				048629991FB727B20095A920 /* TDHistoryViewController.swift in Sources */,
+				04406F551FBC6EDD00EED0D1 /* HotAndGuessModel.swift in Sources */,
 				04132B141FB99D4A003C9F8C /* TDRecCellStyleMoreTableViewCell.swift in Sources */,
 				04132B161FB99D5E003C9F8C /* TDRecCellStyleSpecialTableViewCell.swift in Sources */,
 				04406F531FBC28F600EED0D1 /* CategoryRecommendModel.swift in Sources */,
