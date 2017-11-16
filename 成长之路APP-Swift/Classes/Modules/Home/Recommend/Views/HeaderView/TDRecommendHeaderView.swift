@@ -40,13 +40,23 @@ class TDRecommendHeaderView: UIView {
     var adverImagePics: [String]! {
         didSet{
         self.adverScrollView.imageURLStringsGroup = adverImagePics
-        self.categoryCollectionView
-            .backgroundColor = UIColor.white
         
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
         }
+        
+      }
+        /// 下方分类数组
+    var adverCategoryModel: [CategoryListRecommendModel]! {
+           didSet{
+            self.categoryCollectionView.getdateWithModel(model: adverCategoryModel)
+           self.categoryCollectionView.reloadData()
+            self.updateConstraintsIfNeeded()
+            self.setNeedsUpdateConstraints()
+          }
     }
+        
+
     
     // MARK:  添加布局frame
     override func updateConstraints() {

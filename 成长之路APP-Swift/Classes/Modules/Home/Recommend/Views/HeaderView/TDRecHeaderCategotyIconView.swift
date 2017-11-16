@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 // MARK:  自定义cell
 class TDcateCollectionViewCell: UICollectionViewCell {
@@ -27,10 +28,10 @@ class TDcateCollectionViewCell: UICollectionViewCell {
         return tempLabel
     }()
     
-    func getDateWithModel(model: String) {
+    func getDateWithModel(model: CategoryListRecommendModel?) {
         
-        self.topImageView.image = UIImage.init(named: "find_usercover")
-        self.bottomLabel.text = "热门分享"
+        self.topImageView.sd_setImage(with: URL.init(string: (model?.coverPath)!), placeholderImage: nil)
+        self.bottomLabel.text = model?.title
         
         self.setNeedsUpdateConstraints()
         self.updateConstraintsIfNeeded()
@@ -73,6 +74,15 @@ class TDRecHeaderCategotyIconView: UICollectionView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    var modelList = Array<CategoryListRecommendModel>()
+
+    func getdateWithModel(model: Array<CategoryListRecommendModel?>) {
+        
+        self.modelList = model as! [CategoryListRecommendModel]
+    }
+    
+    
 
 }
 
@@ -85,13 +95,13 @@ extension TDRecHeaderCategotyIconView: UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 12
+        return self.modelList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TDcateCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TDcateCollectionViewCell
         cell.backgroundColor = UIColor.white
-        cell.getDateWithModel(model: "hahha")
+        cell.getDateWithModel(model: self.modelList[indexPath.row])
         return cell
     }
  

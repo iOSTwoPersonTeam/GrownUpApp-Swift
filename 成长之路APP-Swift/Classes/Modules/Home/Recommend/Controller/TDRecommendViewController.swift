@@ -92,6 +92,8 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
             
             // 更新列表数据
             self.tableView.reloadData()
+            self.headerView.adverImagePics = self.viewModel.focusImgsPics
+            self.headerView.adverCategoryModel = self.viewModel.categoryListRecModel
         }
         self.viewModel.refreshDataSource()
 

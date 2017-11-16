@@ -39,10 +39,12 @@ class TDSubRecSpecialTableViewCell: UITableViewCell {
         return tempLabel
     }()
     
-    func getDateWithModel(model: String) {
+    func getDateWithModel(model: SpecialDetailRecommendModel?) {
         
-        self.titleLabel.text = "发哈哈罚金贷款是否健康的撒谎金卡戴珊关卡"
-        self.detailLabel.text = "定时关机卡到房管局地方借款客户交付工会经费光华科技法国红酒开关机航空港"
+        self.titleLabel.text = model?.title
+        self.detailLabel.text = model?.subtitle
+        self.headerImageView.sd_setImage(with: URL.init(string: model?.coverPath ?? ""), placeholderImage: nil)
+        
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
     }
@@ -96,6 +98,15 @@ class TDSubRecSpecialTableView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    var modelList: [SpecialDetailRecommendModel]?
+    
+    func getDataWithModel(model: SpecialRecommendModel?) {
+    
+        self.modelList = model?.list
+
+    }
+    
+    
 }
 
 // MARK: --代理方法实现
@@ -112,7 +123,7 @@ extension TDSubRecSpecialTableView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TDSubRecSpecialTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TDSubRecSpecialTableViewCell
         cell.backgroundColor = UIColor.cyan
-        cell.getDateWithModel(model: "123")
+        cell.getDateWithModel(model: self.modelList?[indexPath.row])
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
