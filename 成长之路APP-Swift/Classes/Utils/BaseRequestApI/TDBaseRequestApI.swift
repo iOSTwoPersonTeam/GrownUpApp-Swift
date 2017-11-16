@@ -35,7 +35,6 @@ extension TDBaseRequestApI {
                 finished(nil, response.result.error as NSError?)
             }
         }
-        
         // 2.请求数据
         let httpMethod: HTTPMethod = methodType == .GET ? .get : .post
         request(urlString, method: httpMethod, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: resultCallBack)
