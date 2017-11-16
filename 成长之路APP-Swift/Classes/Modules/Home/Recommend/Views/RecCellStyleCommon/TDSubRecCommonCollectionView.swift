@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TDsubRecCommonCollectionCell: UICollectionViewCell {
     
@@ -35,11 +36,11 @@ class TDsubRecCommonCollectionCell: UICollectionViewCell {
     }()
     
     
-    func getDateWithModel(model: String) {
+    func getDateWithModel(model: GeneralRecommenModel?) {
         
-        self.topImageView.backgroundColor = UIColor.blue
-        self.titleLabel.text = "十二位演员十二位演员十二位演员十二位演员十二位演员"
-        self.detailLabel.text = "演员名言"
+        self.topImageView.sd_setImage(with: URL.init(string: (model?.coverLarge)!), placeholderImage: nil)
+        self.titleLabel.text = model?.intro
+        self.detailLabel.text = model?.title
         
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
@@ -87,6 +88,13 @@ class TDSubRecCommonCollectionView: UICollectionView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    var modelList: EditorRecommendModel?
+    // Model赋值
+    func getDateWithModel(model: EditorRecommendModel?) {
+        modelList = model
+        self.reloadData()
+    }
 
 }
 
@@ -97,12 +105,12 @@ extension TDSubRecCommonCollectionView: UICollectionViewDelegate, UICollectionVi
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return modelList?.list?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:TDsubRecCommonCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TDsubRecCommonCollectionCell
         cell.backgroundColor = UIColor.orange
-        cell.getDateWithModel(model: "哈哈哈")
+        cell.getDateWithModel(model: modelList?.list?[indexPath.row])
          return cell
     }
     

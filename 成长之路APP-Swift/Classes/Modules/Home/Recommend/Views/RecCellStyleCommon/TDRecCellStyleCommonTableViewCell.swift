@@ -31,10 +31,10 @@ class TDRecCellStyleCommonTableViewCell: UITableViewCell {
         return tempCollectionView
     }()
     
-    func getDateWithModel(model: String) {
+    func getDateWithModel(model: EditorRecommendModel?) {
         
-        self.titleLabel.text = "小编推荐"
-        self.commonCollectionView.backgroundColor = UIColor.red
+        self.titleLabel.text = model?.title
+        self.commonCollectionView.getDateWithModel(model: model)
        
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()

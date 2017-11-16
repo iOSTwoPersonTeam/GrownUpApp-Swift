@@ -124,9 +124,9 @@ extension TDRecommendViewModel {
             } else {
                 let liveRecModel = Mapper<LiveRecommendModel>().mapArray(JSONObject: result!["data"]!)
                 DLog(message: liveRecModel)
-                
+
                 self.liveRecModel = liveRecModel!
-                
+
                 ///  更新tableView数据
                 self.updateBlock!()
             }
@@ -135,6 +135,60 @@ extension TDRecommendViewModel {
     }
     
 }
+
+
+// MARK: --各个section的高度
+let kSectionHeight: CGFloat         = 230.0
+let kSectionLiveHeight: CGFloat     = 227.0
+let kSectionSpecialHeight: CGFloat  = 219.0
+
+
+// MARK: --tableView的数据
+extension TDRecommendViewModel {
+    
+    func numberSections() -> NSInteger {
+        return 3
+    }
+    
+    func numberofItemInsection(_ section: NSInteger) -> NSInteger {
+        /// 各值定义在控制器下
+        switch section {
+        case tdRecommendSectionEditCommen:  // 小编推荐
+            return 1
+        case tdRecommendSectionLive:       // 现场直播
+            return 1
+        case tdRecommendSectionSpecial:    // 精品单曲
+            return 1
+        default:
+            return 0
+        }
+    }
+    
+    func heightForRow(at indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case tdRecommendSectionEditCommen:  // 小编推荐
+            return kSectionHeight
+        case tdRecommendSectionLive:  // 现场直播
+            return kSectionLiveHeight
+        case tdRecommendSectionSpecial:  // 精品单曲
+            return kSectionSpecialHeight
+        default:
+            return 0
+        }
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 

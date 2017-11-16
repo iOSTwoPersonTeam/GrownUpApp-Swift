@@ -16,7 +16,7 @@ class TDRecCellStyleSpecialTableViewCell: UITableViewCell {
         return tempTableView
     }()
     
-    func getDateWithModel(model: String) {
+    func getDateWithModel(model: SpecialRecommendModel?) {
         
         
         self.updateConstraintsIfNeeded()

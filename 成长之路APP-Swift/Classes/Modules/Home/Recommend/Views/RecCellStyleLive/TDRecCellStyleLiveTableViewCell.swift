@@ -50,10 +50,23 @@ class TDRecCellStyleLiveTableViewCell: UITableViewCell {
         return tempLabel
     }()
     
-    func getDateWithModel(model: String) {
+    // MARK:- 定义属性
+    // 图片数组
+    var urlPics: [String] = [String]()
+    // model
+    var modelList = Array<LiveRecommendModel>()
+    
+    func getDateWithModel(model: Array<LiveRecommendModel?>) {
+       
+        urlPics.removeAll()
         
-    self.cycleImageView.imageURLStringsGroup = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
-
+        for item in model {
+            DLog(message: item?.coverPath);
+            urlPics.append(item?.coverPath ?? "")
+        }
+        self.cycleImageView.imageURLStringsGroup = urlPics
+        self.modelList = model as! [LiveRecommendModel]
+        
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
     }
@@ -103,8 +116,8 @@ extension TDRecCellStyleLiveTableViewCell: SDCycleScrollViewDelegate {
     // 图片滚动的方法的回调
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didScrollTo index: Int) {
         
-        self.titilelabel.text = "标题北京标题北京标题北京标题北京标题北京"
-        self.detailLabel.text = "详情详情详情详情详情详情详情详情详情详情详情详情"
+        self.titilelabel.text = self.modelList[index].name
+        self.detailLabel.text = self.modelList[index].shortDescription
     }
     
     
