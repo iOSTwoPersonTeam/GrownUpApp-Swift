@@ -32,7 +32,7 @@ class TDRecommendViewController: TDBaseViewController {
     let headerFrame = CGRect.init(x: 0, y: 0, width: SCREENWITH, height: SCREENHEIGHT/5 + 90)
     lazy var headerView: TDRecommendHeaderView  = {
         let recHeaderView = TDRecommendHeaderView.init(frame: headerFrame)
-        recHeaderView.backgroundColor = UIColor.orange
+        recHeaderView.backgroundColor = RGBA(r: 230, g: 231, b: 233, a: 1.0)
         return recHeaderView
     }()
     
@@ -42,7 +42,7 @@ class TDRecommendViewController: TDBaseViewController {
         let tableV = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: SCREENHEIGHT - 49 - 64 - 40), style: UITableViewStyle.plain)
         tableV.delegate = self
         tableV.dataSource = self
-//        tableV.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableV.separatorStyle = UITableViewCellSeparatorStyle.none
         tableV.tableHeaderView  = UIView.init(frame: headerFrame)
         tableV.tableHeaderView?.addSubview(self.headerView)
         self.view.addSubview(tableV)
@@ -67,8 +67,16 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.orange
-
+        view.backgroundColor = UIColor.hexInt(0xf3f3f3)
+        /// 加载数据
+        self.viewModel.updateBlock = {
+            
+            // 更新列表数据
+            self.headerView.adverImagePics = self.viewModel.focusImgsPics
+            self.headerView.adverCategoryModel = self.viewModel.categoryListRecModel
+            self.tableView.reloadData()
+        }
+        self.viewModel.refreshDataSource()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -86,17 +94,6 @@ tableV.register(TDRecCellStyleSpecialTableViewCell.classForCoder(), forCellReuse
         
         }
        //----------------------------------------------------
-
-        /// 加载数据
-        self.viewModel.updateBlock = {
-            
-            // 更新列表数据
-            self.tableView.reloadData()
-            self.headerView.adverImagePics = self.viewModel.focusImgsPics
-            self.headerView.adverCategoryModel = self.viewModel.categoryListRecModel
-        }
-        self.viewModel.refreshDataSource()
-
     }
 
     
@@ -120,19 +117,22 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
         switch indexPath.section {
         case 0:    // 小编推荐
             let commenCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionEditCommenID, for: indexPath) as? TDRecCellStyleCommonTableViewCell
-            commenCell?.backgroundColor = UIColor.yellow
+            commenCell?.backgroundColor = UIColor.white
+            commenCell?.selectionStyle = .none
             commenCell?.getDateWithModel(model: self.viewModel.editorRecModel)
             DLog(message: self.viewModel.editorRecModel)
             return commenCell!
         case 1:   // 现场直播
             let liveCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectionLiveID, for: indexPath) as? TDRecCellStyleLiveTableViewCell
-            liveCell?.backgroundColor = UIColor.purple
+            liveCell?.backgroundColor = UIColor.white
+            liveCell?.selectionStyle = .none
             liveCell?.getDateWithModel(model: self.viewModel.liveRecModel)
              DLog(message: self.viewModel.liveRecModel)
             return liveCell!
         case 2:   // 精品单曲
             let specialCell: TDRecCellStyleSpecialTableViewCell = tableView.dequeueReusableCell(withIdentifier: tdRecommendSectinSpecialID, for: indexPath) as! TDRecCellStyleSpecialTableViewCell
-            specialCell.backgroundColor = UIColor.orange
+            specialCell.backgroundColor = UIColor.white
+            specialCell.selectionStyle = .none
             specialCell.getDateWithModel(model: self.viewModel.specailRecModel)
             DLog(message: self.viewModel.specailRecModel)
             return specialCell
@@ -144,6 +144,15 @@ extension TDRecommendViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return viewModel.heightForRow(at: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = RGBA(r: 230, g: 231, b: 233, a: 1.0)
+        return view
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
     }
     
     

@@ -109,7 +109,7 @@ extension TDSubRecCommonCollectionView: UICollectionViewDelegate, UICollectionVi
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:TDsubRecCommonCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TDsubRecCommonCollectionCell
-        cell.backgroundColor = UIColor.orange
+        cell.backgroundColor = UIColor.white
         cell.getDateWithModel(model: modelList?.list?[indexPath.row])
          return cell
     }

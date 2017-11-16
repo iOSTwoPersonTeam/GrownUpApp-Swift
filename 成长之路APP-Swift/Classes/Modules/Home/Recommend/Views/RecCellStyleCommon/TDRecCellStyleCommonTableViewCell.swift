@@ -15,7 +15,7 @@ class TDRecCellStyleCommonTableViewCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let tempLabel = UILabel.init()
         tempLabel.font = UIFont.systemFont(ofSize: 15)
-        tempLabel.backgroundColor = UIColor.red
+        tempLabel.backgroundColor = UIColor.white
         addSubview(tempLabel)
         return tempLabel
     }()
@@ -26,7 +26,7 @@ class TDRecCellStyleCommonTableViewCell: UITableViewCell {
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
         layout.itemSize = CGSize.init(width: 110, height: 160)
         let tempCollectionView = TDSubRecCommonCollectionView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENWITH, height: 160), collectionViewLayout: layout)
-        tempCollectionView.backgroundColor = UIColor.cyan
+        tempCollectionView.backgroundColor = UIColor.white
         self.addSubview(tempCollectionView)
         return tempCollectionView
     }()

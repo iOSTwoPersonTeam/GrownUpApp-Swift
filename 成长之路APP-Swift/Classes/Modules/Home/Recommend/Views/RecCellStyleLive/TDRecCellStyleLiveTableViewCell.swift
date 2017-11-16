@@ -17,7 +17,7 @@ class TDRecCellStyleLiveTableViewCell: UITableViewCell {
         let tempLabel = UILabel.init()
         tempLabel.font = UIFont.systemFont(ofSize: 15)
         tempLabel.text = "现场直播"
-        tempLabel.backgroundColor = UIColor.red
+        tempLabel.backgroundColor = UIColor.white
         addSubview(tempLabel)
         return tempLabel
     }()
@@ -25,7 +25,8 @@ class TDRecCellStyleLiveTableViewCell: UITableViewCell {
     /// 轮播图视图
     lazy var cycleImageView: SDCycleScrollView = {
         let tempView = SDCycleScrollView.init()
-        tempView.backgroundColor = UIColor.red
+        tempView.backgroundColor = UIColor.white
+        tempView.showPageControl = false
         tempView.delegate = self
         addSubview(tempView)
         return tempView
@@ -35,6 +36,7 @@ class TDRecCellStyleLiveTableViewCell: UITableViewCell {
     lazy var titilelabel: UILabel = {
         let tempLabel = UILabel.init()
         tempLabel.font = UIFont.systemFont(ofSize: 14)
+        tempLabel.textColor = UIColor.black
         tempLabel.textAlignment = NSTextAlignment.left
         addSubview(tempLabel)
         return tempLabel
@@ -44,7 +46,7 @@ class TDRecCellStyleLiveTableViewCell: UITableViewCell {
     lazy var detailLabel: UILabel = {
         let tempLabel = UILabel.init()
         tempLabel.font = UIFont.systemFont(ofSize: 12)
-        tempLabel.textColor = UIColor.lightGray
+        tempLabel.textColor = UIColor.gray
         tempLabel.textAlignment = NSTextAlignment.left
         addSubview(tempLabel)
         return tempLabel

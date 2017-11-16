@@ -14,7 +14,7 @@ class TDRecCellStyleSpecialTableViewCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let tempLabel = UILabel.init()
         tempLabel.font = UIFont.systemFont(ofSize: 15)
-        tempLabel.backgroundColor = UIColor.red
+        tempLabel.backgroundColor = UIColor.white
         addSubview(tempLabel)
         return tempLabel
     }()

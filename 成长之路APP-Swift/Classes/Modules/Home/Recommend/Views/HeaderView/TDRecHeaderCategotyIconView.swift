@@ -15,7 +15,7 @@ class TDcateCollectionViewCell: UICollectionViewCell {
     lazy var topImageView: UIImageView = {
         let iconView = UIImageView.init()
         iconView.layer.masksToBounds = true
-        iconView.layer.cornerRadius = 30
+        iconView.layer.cornerRadius = 25
         self.addSubview(iconView)
         return iconView
     }()
@@ -41,10 +41,10 @@ class TDcateCollectionViewCell: UICollectionViewCell {
         super.updateConstraints()
         
         self.topImageView.snp.makeConstraints { (make) in
-            make.left.equalTo(0)
-            make.top.equalTo(0)
-            make.right.right.equalTo(self.snp.right).offset(0)
-            make.height.equalTo(60)
+            make.left.equalTo(10)
+            make.top.equalTo(5)
+            make.width.equalTo(50)
+            make.height.equalTo(50)
         }
         
         self.bottomLabel.snp.makeConstraints { (make) in

@@ -17,9 +17,10 @@ class TDRecommendHeaderView: UIView {
      注意: 这里网络请求图片无法正常显示的原因是因为没有添加HTTPS的安全传输协议***
      */
     lazy var adverScrollView: SDCycleScrollView = {
-        let adverView = SDCycleScrollView()
-        adverView.placeholderImage = UIImage.init(named: "find_usercover")
-        adverView.backgroundColor = UIColor.purple
+        let adverView = SDCycleScrollView.init()
+        adverView.backgroundColor = UIColor.white
+        adverView.showPageControl = false
+        adverView.autoScroll = true
         self.addSubview(adverView)
         return adverView
     }()
@@ -28,7 +29,7 @@ class TDRecommendHeaderView: UIView {
     lazy var categoryCollectionView: TDRecHeaderCategotyIconView = {
         let layout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
-        layout.itemSize = CGSize.init(width: 60, height: 90)
+        layout.itemSize = CGSize.init(width: 60, height: 85)
         let cateCollectionView = TDRecHeaderCategotyIconView.init(frame: CGRect.init(x: 0, y: 160, width: SCREENWITH, height: 90), collectionViewLayout: layout)
         cateCollectionView.backgroundColor = UIColor.white
         self.addSubview(cateCollectionView)
@@ -40,7 +41,7 @@ class TDRecommendHeaderView: UIView {
     var adverImagePics: [String]! {
         didSet{
         self.adverScrollView.imageURLStringsGroup = adverImagePics
-        
+            
         self.updateConstraintsIfNeeded()
         self.setNeedsUpdateConstraints()
         }

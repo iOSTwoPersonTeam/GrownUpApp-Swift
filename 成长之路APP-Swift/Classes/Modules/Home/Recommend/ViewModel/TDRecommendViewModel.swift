@@ -138,8 +138,8 @@ extension TDRecommendViewModel {
 
 
 // MARK: --各个section的高度
-let kSectionHeight: CGFloat         = 230.0
-let kSectionLiveHeight: CGFloat     = 227.0
+let kSectionHeight: CGFloat         = 210.0
+let kSectionLiveHeight: CGFloat     = 200.0
 let kSectionSpecialHeight: CGFloat  = 219.0
 
 

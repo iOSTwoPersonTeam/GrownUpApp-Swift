@@ -14,7 +14,7 @@ class TDSubRecSpecialTableViewCell: UITableViewCell {
     // 头部视图
     lazy var headerImageView: UIImageView = {
         let tempImageView = UIImageView.init()
-        tempImageView.backgroundColor = UIColor.red
+        tempImageView.backgroundColor = UIColor.clear
         addSubview(tempImageView)
         return tempImageView
     }()
@@ -22,7 +22,7 @@ class TDSubRecSpecialTableViewCell: UITableViewCell {
     // 标题
     lazy var titleLabel: UILabel = {
         let tempLabel = UILabel.init()
-        tempLabel.backgroundColor = UIColor.orange
+        tempLabel.backgroundColor = UIColor.clear
         tempLabel.font = UIFont.systemFont(ofSize: 14)
         addSubview(tempLabel)
         return tempLabel
@@ -31,7 +31,7 @@ class TDSubRecSpecialTableViewCell: UITableViewCell {
     // 详情
     lazy var detailLabel: UILabel = {
         let tempLabel = UILabel.init()
-        tempLabel.backgroundColor = UIColor.yellow
+        tempLabel.backgroundColor = UIColor.clear
         tempLabel.font = UIFont.systemFont(ofSize: 12)
         tempLabel.textColor = UIColor.lightGray
         tempLabel.numberOfLines = 0
@@ -122,7 +122,8 @@ extension TDSubRecSpecialTableView: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TDSubRecSpecialTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TDSubRecSpecialTableViewCell
-        cell.backgroundColor = UIColor.cyan
+        cell.backgroundColor = UIColor.white
+        cell.selectionStyle = .none
         cell.getDateWithModel(model: self.modelList?[indexPath.row])
         return cell
     }
