@@ -19,8 +19,7 @@ class TDRecommendHeaderView: UIView {
     lazy var adverScrollView: SDCycleScrollView = {
         let adverView = SDCycleScrollView.init()
         adverView.backgroundColor = UIColor.white
-        adverView.showPageControl = false
-        adverView.autoScroll = true
+        adverView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
         self.addSubview(adverView)
         return adverView
     }()
@@ -38,8 +37,10 @@ class TDRecommendHeaderView: UIView {
     
     
     /// 上方轮播图数组
-    var adverImagePics: [String]! {
+    var adverImagePics: [String]? {
         didSet{
+//      self.adverScrollView.imageURLStringsGroup = ["http://fdfs.xmcdn.com/group31/M00/9E/32/wKgJSVl4WUzxtz8JAAJxYjP-AWU830_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0A/0D/B4/wKgJnVmWYdDCA4BEAAKCqs-DRzQ574_ios_large.jpg", "http://fdfs.xmcdn.com/group33/M0B/0D/EB/wKgJTFmWYhGAZ-r2AALtEuhyjq4607_ios_large.jpg"]
+            
         self.adverScrollView.imageURLStringsGroup = adverImagePics
             
         self.updateConstraintsIfNeeded()
@@ -52,6 +53,7 @@ class TDRecommendHeaderView: UIView {
            didSet{
             self.categoryCollectionView.getdateWithModel(model: adverCategoryModel)
            self.categoryCollectionView.reloadData()
+            
             self.updateConstraintsIfNeeded()
             self.setNeedsUpdateConstraints()
           }
